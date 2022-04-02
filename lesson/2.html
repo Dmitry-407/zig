@@ -5,7 +5,7 @@
         <link href="/zig/font.css" rel="stylesheet" type="text/css"/>
         <link href="/zig/style.css" rel="stylesheet" type="text/css"/>
         <meta property="og:title" content="Урок #2"/>
-        <meta property="vk:image"  content="https://dmitriy-407.github.io/zig/img/2.png"/>
+        <meta property="vk:image"  content="https://dmitry-407.github.io/zig/img/2.png"/>
         <meta charset="utf-8">
         <title>Руководство по моддингу</title>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -55,7 +55,7 @@
                 <p>Выберем наш <b>package</b> <span style="color: #ccc">(модное название каталогов в <b>Java</b>)</span>, нажмем правый клик и выберем <b>"New -> Java Class"</b></p>
                 <p>Зададим имя нашему главному классу. Впишем в поле <b>"Name"</b> значение: <b>"Tutorial"</b>. Нажем <b>"Ok"</b><br>У нас создался класс, в котором, собственно, ничего нет. И вот здесь мы, наконец, начинаем программировать. Правда, сначала нам надо создать <b>"скелет"</b> нашего мода. Создадим в нашем новом классе <b>3 свойства</b></p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -78,7 +78,7 @@
                 <p>Теперь про сами переменные. Они содержат в себе техническое название мода (MODID), человеческое название мода <b>(NAME)</b> и версию мода <b>(VERSION)</b>. Удостоверьтесь, чтобы значения <b>MODID</b> и <b>VERSION</b> совпадали со значениями в <b>build.gradle</b>!</p>
                 <p>Далее, нам необходимо сказать forge'у, что этот вот класс является главным для нашего мода. Для этого служит аннотация из <b>forge</b> под названием <b>@Mod</b>. Давайте добавим ее непосредственно перед объявлением нашего главного класса:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -93,7 +93,7 @@
                 <p class="imag" style="background-image: url(https://pp.userapi.com/c858028/v858028000/179c9/zCLQJ8II4gA.jpg); height: 200px;" onclick="image('https://pp.userapi.com/c858028/v858028000/179c9/zCLQJ8II4gA.jpg')"></p>
                 <p>Из меню выберите <b>«Import class»</b>. И, магическими силами <b>IDEA</b>, в ваш класс добавятся все необходимые import'ы <span style="color: #ccc;">(в нашем случае, только один)</span>. В итоге, наш класс будет выглядеть вот так <span style="color: #ccc;">(без троеточий)</span>:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -115,7 +115,7 @@
                 <p class="imag" style="background-image: url(https://pp.userapi.com/c858028/v858028000/17a11/fxK_V5RKRFY.jpg); height: 200px;" onclick="image('https://pp.userapi.com/c858028/v858028000/17a11/fxK_V5RKRFY.jpg')"></p>
                 <p>Откройте класс <b>ClientProxy</b> и в строке его объявления допишите <b>«extends CommonProxy»</b></p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -127,7 +127,7 @@
                 <p class="warn">Такой подход хоть и рекомендуется самим <b>Forge</b>, но является немного нелогичным. В основе разделения должны быть классы <b>ServerProxy</b> <span style="color: #ccc">(в котором будет код, который выполняется исключительно на стороне сервера)</span> и <b>ClientProxy</b> <span style="color: #ccc">(код которого выполняется исключительно на стороне клиента)</span>. Мы же создаем класс, общий для клиента и сервера <span style="color: #ccc">(<b>CommonProxy</b>)</span> и отдельный класс для клиента <b>ClientProxy</b>, который будет включать в себя и код из <b>CommonProxy</b></p>
                 <p>Теперь нам надо сказать нашему моду, что у него есть прокси. Делается это в главном классе при помощи следующей аннотации</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -144,7 +144,7 @@
                 <p class="info">Почти каждое действие в майнкрафте дублируется соответствующим событием. <b>Событие</b> — это механика майнкрафта, которое позволяет коду «подписываться» на действия. То-есть, например, игрок теряет здоровье, когда падает с высоты. Значит, есть часть кода, которая подписана на событие "игрок упал", проверяет высоту, с которой игрок упал и, если высота больше безопасной, и у игрока нет зачарования на Feather Falling, отнимает у игрока сердечки. На событиях завязана вся логика майнкрафта, и это чертовски удобно! Главное, втянутся в саму суть событий</p>
                 <p>Итак, события. Есть три события, которые <b>Forge</b> отправляет всем подписаным модам при загрузке майнкрафта. Это <b>FMLPreInitializationEvent</b>, <b>FMLInitializationEvent</b> и <b>FMLPostInitializationEvent</b>. Если вы когда-нибудь следили за полоской загрузки модов в сборке, вы видели там надписи <b>«Pre-init Phase»</b>, <b>«Init Phase»</b> и <b>«Post-init Phase»</b>. Это как раз и есть действия, которые инициируют вышеобозначенные события. Ответом на эти события, моды регистрируют свои внутренние механики, задают экземпляры классов с подпиской на другие события, регистрируют пользовательские интерфейсы блоков, регистрируют сетевые пакеты и прочее служебное добро, которое будет необходимо для работы мода. Для начала, давайте создадим в наших прокси-классах методы, которые будут вызываться в ответ на полученное событие. В классе <b>CommonProxy</b> создадим методы</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -167,7 +167,7 @@
                 <p class="imag" style="background-image: url(https://pp.userapi.com/c858028/v858028567/15ff4/qUAfufgojKY.jpg); height: 600px;" onclick="image('https://pp.userapi.com/c858028/v858028567/15ff4/qUAfufgojKY.jpg')"></p>
                 <p><b>IDEA</b> нам показала список методов, которые можно перегрузить. Нас интересуют три: <b>preInit</b>, <b>init</b> и <b>postInit</b>. Ведь именно так мы назвали методы в нашем <b>CommonProxy</b>. Выбираем их все и нажимаем <b>«Ok»</b>. Наш класс клиентского прокси преобразился автоматически в нечто подобное:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -195,7 +195,7 @@
                 <p class="warn">Аннотация <b>@Override</b> скорее избавляет нас от невнимательности, чем несет какое-то более важное значение. Компилятор ругнется на ошибку, если наш метод, который аннотирован как <b>@Override</b> по факту ничего не перегружает. Это помогает избежать ошибок, если вы перегружаете методы вручную</p>
                 <p>Теперь давайте подпишем наш мод на получение этих событий. Делается это в главном классе мода:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -229,7 +229,7 @@
                 <p class="warn">Пакеты принято называть в <b>snake_case</b></p>
                 <p>В получившемся пакете уже можно создать наш класс для предмета</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -239,7 +239,7 @@
                 </div>
                 <p>Далее, мы хотим создать предмет, а это уже готовый ванильный класс. Поэтому, чтобы не переписывать всю внутреннюю логику работы с предметом, имеет смысл унаследовать оригинальный класс и перегрузить те методы, которые необходимы именно для нашего предмета. Добавляем к объявлению класса <b>«extends Item»</b>:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -253,7 +253,7 @@
                 <p>Теперь нам необходимо как-то отличать наш предмет от остальных. В <b>Forge</b> для этого используется механизм <b>«регистров»</b> <span class="color #ccc;">(registers) (не пугайтесь, это не те регистры, которые находятся внутри процессора, это скорее коллекция всех предметов, блоков, измерений, жидкостей и так далее)</span>. И, чтобы отличать предметы друг от друга внутри этих регистров, используются <b>«регистровые имена»</b>. <span class="color: #ccc;">(register names)</span>. Как правило, они для удобства совпадают с названием классов, однако, буквы должны всегда быть в <b>нижнем регистре</b> и из спец-символов разрешено только <b>«нижнее подчеркивание»</b> <span class="color: #ccc;">(то-есть, снова snake_case)</span></p>
                 <p>Чтобы нам задать регистровое имя для нашего предмета, создадим <b>конструктор</b> нашего класса и напишем там необходимый код:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -274,7 +274,7 @@
                 <p>Мы создали класс предмета. Теперь его необходимо <b>зарегистрировать</b> и создать экземпляр, который и будет использоваться в дальшейшем в моде</p>
                 <p>Обычно, все экземпляры предметов и блоков мода хранятся в отдельных классах. Давайте создадим такой класс для предметов. Назвать класс можно как угодно, но я предпочитаю называть его <b>именем мода + словом Items</b>. Таким образом, мы сможем отличить наш класс от классов других модов и ваниллы. Так что, создадим класс <b>TutorialItems</b>. Создавать его будем в пакете <b>items</b></p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/tutorialitems" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/tutorialitems" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -284,7 +284,7 @@
                 </div>
                 <p>Внутри класса создадим <b>указатель</b> на экземпляр нашего нового предмета с аннотацией <b>@GameObject</b>. Это аннотация от <b>Forge</b>, которая позволяет ему указать, что в свойстве, следующим за аннотацией, содержится экземпляр класса с игровым объектом. Почему я сказал <b>«указатель»</b>? Потому что мы по факту не создаем экземпляр, а только назначаем переменную. Само создание будет немного потом</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/tutorialitems" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/tutorialitems" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -299,7 +299,7 @@
                 <p class="info">Имена предметам и блокам обычно дают в <b>UPPERCASE</b>, однако, я предпочитаю <b>camelCase</b> <span style="color: #ccc">(то-есть, такой же <b>CamelCase</b>, как обычно, но со строчной буквой в начале)</span>, а <b>UPPERCASE</b> храню для <b>final-переменных</b></p>
                 <p>Чтож, мы создали экземпляр нашего предмета, однако теперь нам нужно <b>зарегистрировать</b> <span style="color: #ccc;">(буквально — поместить в <b>forge-регистр</b>)</span> и присвоить ему модель. Давайте начнем со второго. В нашем <b>TutorialItems</b> классе создадим еще один метод:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -314,7 +314,7 @@
                 <p>Сам метод является статическим и будет вызываться из наших прокси для того, чтобы присвоить предметам модель</p>
                 <p>Однако, нам необходимо еще и сам метод создания модели описать. Перейдем в класс с нашим предметом <span style="color: #ccc;">(то-бишь, в <b>Key</b>)</span> и добавим метод для регистрации модели предмета:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -328,7 +328,7 @@
                 <p>В этом методе мы вызываем класс <b>Forge</b>, который отвечает за модели всего в игре. В том числе и за модели предметов. Далее, при помощи статического метода <b>setCustomModelResourceLocation</b>, мы указываем, что текущий предмет <b>(this)</b> в варианте с индексом ноль <b>(0)</b> должен искать модель по параметрам текущего регистрового имени <span style="color: #ccc;">(<b>getRegistryName()</b> любезно нам его вернет)</span> в ванианте для <b>«inventory»</b> <span style="color: #ccc">(то-есть, для инвентаря)</span></p>
                 <p>Теперь вызов этого нашего метода необходимо поместить в метод <b>initModels</b> нашего класса с предметами <b>TutorialItems</b></p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -340,7 +340,7 @@
                 <p class="warn">Наш метод не является статическим. И для его вызова необходим созданный нами ранее экземпляр класса с предметом</p>
                 <p>Теперь мы, наконец, готовы зарегистрировать наш предмет в <b>Forge</b>. Для этого вернемся к классу общего прокси <b>CommonProxy</b>. Во-первых, нам надо добавить аннотацию <b>@Mod.EventBusSubscriber</b> перед объявлением класса, чтобы дать понять <b>Forge</b>, что этот класс будет <b>подисываться</b> на сообщения</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -353,7 +353,7 @@
                 </div>
                 <p>И создать метод, который и будет подписан на сообщение о фазе регистрации предметов в игре</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -366,7 +366,7 @@
                 <p>Я назвал метод <b>registerItems</b>, чтобы было понятнее, что именно он делает. Тип сообщения, на которое подписывается метод — <b>RegistryEvent.Register&lt;Item&gt;</b> — то-есть, <b>регистрации объектов</b> типа <b>Item</b>. И не забываем, что все методы, которые подписываются как обработчик сообщений, должны быть аннотированы при помощи <b>@SubscribeEvent</b></p>
                 <p>Мы подписались на сообщение. Теперь нам надо на него отреагировать! В нашем случае, когда <b>Forge</b> предлагает модам зарегистрировать свои предметы, нам необходимо зарегистрировать свой. Сделать это просто. В <b>registerItems</b> добавим строчку:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -380,7 +380,7 @@
                 <p>Мы берем событие, которое к нам прилетело <b>(event)</b>, запрашиваем из этого события регистр <b>(getRegistry())</b> и этот регистр просим зарегистрировать <b>(register())</b> экземпляр нашего предмета</p>
                 <p>Теперь нам надо откуда-то вызвать метод <b>TutorialItems.initModels</b>. Модели предметов, равно как и их регистрация, создаются в определенную фазу по определенному событию. Однако, модели — вещь исключительно клиентская <span style="color: #ccc;">(серверу абсолютно без разницы, как выглядит предмет и какая у него текстура)</span> поэтому, отредактируем наш <b>ClientProxy</b>:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -395,7 +395,7 @@
                 <p class="warn">В этот раз я указал сторону <b>(Side.CLIENT)</b> в аннотации. Это даст понять <b>Forge</b>, что этот класс может подписываться только на клиентские события</p>
                 <p>И добавим сам метод с подпиской на событие о регистрации моделей:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -432,7 +432,7 @@
                 <p class="warn">Нелокализованное имя для предмета формируется следующим образом: <b>item. техническое имя мода. регистровое имя предмета. name=.</b> Пробелы после <b>name</b> не допускаются равно как и пробелы после знака равенства!</p>
                 <p>Если хотите, в файле <b>ru_RU.lang</b> можете прописать аналогичную строку с переводом названия предмета на русский:</p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/resources/assets.tutorial/lang/en_us" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/resources/assets.tutorial/lang/en_us" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -440,7 +440,7 @@
                 </div>
                 <p>Дальше. В <b>models/items</b> создадим файл с именем <b>«регистровое имя предмета.json»</b>. В нашем случае: <b>key.json</b></p>
                 <div class="code">
-                    <a href="https://dmitriy-407.github.io/zig/code/2/resources/assets.tutorial/models/item/key" class="open">
+                    <a href="https://dmitry-407.github.io/zig/code/2/resources/assets.tutorial/models/item/key" class="open">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="link_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M16.544 9.193L7.096 18.64a1.228 1.228 0 0 1-1.736-1.736l9.447-9.448H8.93A1.228 1.228 0 1 1 8.93 5h8.842C18.45 5 19 5.55 19 6.228v8.842a1.228 1.228 0 1 1-2.456 0V9.193z" class="color" fill-rule="nonzero"></path></g></svg>
                         <span class="text">Исходник</span>
                     </a>
@@ -458,12 +458,12 @@
                 <p class="warn">Все текстуры в майнкрафте должны иметь формать <b>PNG</b>, а размер текстур в ванильном майнкрафте всего 16х16 пикселей</p>
                 <p>Теперь осталось наваять какую-нибудь текстуру в любимом графическом редакторе, сохранить ее в файл в формате <b>PNG</b>, назвать <b>«key» (со строчной буквы!!!)</b> и поместить в <b>textures/items</b></p>
                 <p>Художник из меня, конечно, тот еще, но тем, кому лень рисовать текстуру ключа, вот вам мой вариант:</p>
-                <div id="key" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/key.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/key.png">Скачать</a></div>
+                <div id="key" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/key.png)"></p><a download href="https://dmitry-407.github.io/zig/download/key.png">Скачать</a></div>
                 <p>Теперь пришла пора запустить наш мод! Сверху справа в окне <b>IDEA</b> выбираем конфигурацию <b>«Minecraft Client»</b> и нажимаем на иконку с зеленым жучком!</p>
                 <p class="imag" style="background-image: url(https://pp.userapi.com/c858028/v858028799/16c07/xLQrtY5Mqws.jpg); height: 120px;" onclick="image('https://pp.userapi.com/c858028/v858028799/16c07/xLQrtY5Mqws.jpg')"></p>
                 <p>У нас должен запуститься клиент майнкрафта. Создаем новый мир, включаем креативный режим, открываем инвентарь и ищем предмет с нашим именем, то-есть <b>«Key»</b>. Если вы все сделали правильно, вы его найдете! И даже увидите, что он выглядит как красный ключ <span style="color: #ccc;">(или вы нарисовали свою текстуру?)</span></p>
                 <p class="imag" style="background-image: url(https://sun1-25.userapi.com/c858028/v858028799/16c18/UQuWqtY0lP4.jpg); height: 300px;" onclick="image('https://sun1-25.userapi.com/c858028/v858028799/16c18/UQuWqtY0lP4.jpg')"></p>
-                <a href="https://dmitriy-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="donwload">Исходники</a>
+                <a href="https://dmitry-407.github.io/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="donwload">Исходники</a>
             </div>
         </div>
         <div class="window"></div>
@@ -472,7 +472,7 @@
             <div class="content">
                 <p class="avtor">Автор используемых материалов <a href="https://vk.com/zigthehedge">ZigTheHedge</a></p>
                 <p class="image">Используются изображения с <a href="https://www.minecraft.net">Minecraft.net</a></p>
-                <p class="dev">Разработано <a href="https://vk.com/demon_407">Dmitriy Popov</a></p>
+                <p class="dev">Разработано <a href="https://vk.com/demon_407">dmitry Popov</a></p>
             </div>
         </footer>
         <script src="/zig/script.js" type="text/javascript"></script>

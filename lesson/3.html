@@ -5,7 +5,7 @@
         <link href="/zig/font.css" rel="stylesheet" type="text/css"/>
         <link href="/zig/style.css" rel="stylesheet" type="text/css"/>
         <meta property="og:title" content="Урок #3"/>
-        <meta property="vk:image"  content="https://dmitriy-407.github.io/zig/img/3.png"/>
+        <meta property="vk:image"  content="https://dmitry-407.github.io/zig/img/3.png"/>
         <meta charset="utf-8">
         <title>Руководство по моддингу</title>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -288,7 +288,7 @@
                 </div>
                 <p>Здесь мы указываем, что за основу берется ванильная модель, представляющая собой кубик со всеми одинаковыми текстурами. Расположена эта модель в ванилле по пути <b>assets/minecraft/models/block/cube_all.json</b> Если интересно, можете найти и открыть эту модель, чтобы посмотреть, из чего она состоит</p>
                 <p>Если посмотрели, то знаете, что модель является производной от <b>«cube»</b>, и текстуры всех граней указывают на <b>«all»</b>. Именно для этого имени, мы м зададим текстуру в блоке <b>«textures»</b>. Ссылаться эта текстура будет на картинку в формате <b>«png»</b> по пути <b>assets/tutorial/textures/blocks</b>. Создадим текстуру в любимом графическом редакторе и поместим ее по этому пути, назвав файл <b>bathroomtile.png</b></p>
-                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/bathroomtile.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/bathroomtile.png">Скачать</a></div>
+                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/bathroomtile.png)"></p><a download href="https://dmitry-407.github.io/zig/download/bathroomtile.png">Скачать</a></div>
                 <p>Теперь мы готовы к тестовому запуску!</p>
                 <p class="imag" style="background-image: url(https://pp.userapi.com/c851432/v851432037/16b2e8/g_wP_iR1VK4.jpg); height: 300px;" onclick="image('https://pp.userapi.com/c851432/v851432037/16b2e8/g_wP_iR1VK4.jpg')"></p>
                 <p>Урааа! Наш первый блок готов! Теперь, по образу и подобию нашей «плитки в ванну» создадим руду! Назовем ее <b>Redonite</b>. Почему редонит? Потому что с какого-то перепуга, я сделал текстуру ключа красной ) А эта наша руда будет нужна как раз для того, чтобы скрафтить ключ</p>
@@ -303,7 +303,7 @@
                 <p><span class="number">8</span>Создаем модель для блока</p>
                 <p><span class="number">9</span>Добавляем строку локализации в <b>en_US.lang</b></p>
                 <p><span class="number">10</span>Рисуем текстуру для блока и помещаем ее по соответствующему пути</p>
-                <div id="redonite" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/redoniteore.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/redoniteore.png">Скачать</a></div>
+                <div id="redonite" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/redoniteore.png)"></p><a download href="https://dmitry-407.github.io/zig/download/redoniteore.png">Скачать</a></div>
                 <p>Если вы все сделали верно, у вас игре появится еще один блок, который, по моей задумке, должен олицетворять руду. Конечно, он пока доступен только через креативный инвентарь, но — все по порядку…</p>
                 <p class="imag" style="background-image: url(https://pp.userapi.com/c851432/v851432638/1711e6/gaP7ywsHcdo.jpg); height: 300px;" onclick="image('https://pp.userapi.com/c851432/v851432638/1711e6/gaP7ywsHcdo.jpg')"></p>
                 <p class="warn">Я сначала думал в этой статье описать, каким образом сделать так, чтобы наша руда генерировалась в мире, но потом подумал, что мы это рассмотрим в следующей статье вместе с рецептами. А эту статью закончим на добавлении блока, который будет поворачиваться к игроку «лицевой стороной» при установке его в мир</p>
@@ -457,13 +457,13 @@
                     <p>Во-вторых, мы используем одну и ту же текстуру для всех сторон <span style="color: #ccc">(я назвал ее <b>keyhole_side</b>)</span>, кроме <b>«лицевой»</b> <span style="color: #ccc">(которую я называл <b>keyhole_front</b>)</span></p>
                 </div>
                 <p>Ну и сами текстуры либо рисуем, либо берем мои:</p>
-                <div id="keyhole_front" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/keyhole_front.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/keyhole_front.png">Скачать</a></div>
-                <div id="keyhole_side" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/keyhole_side.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/keyhole_side.png">Скачать</a></div>
+                <div id="keyhole_front" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/keyhole_front.png)"></p><a download href="https://dmitry-407.github.io/zig/download/keyhole_front.png">Скачать</a></div>
+                <div id="keyhole_side" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/keyhole_side.png)"></p><a download href="https://dmitry-407.github.io/zig/download/keyhole_side.png">Скачать</a></div>
                 <p>Что я забыл? Правильно, добавить локализацию названия блока:</p>
                 <div class="code">tile.tutorial.keyhole.name=Keyhole</div>
                 <p class="imag" style="background-image: url(https://pp.userapi.com/c856120/v856120288/9b733/e7WukiotG9E.jpg); height: 300px;" onclick="image('https://pp.userapi.com/c856120/v856120288/9b733/e7WukiotG9E.jpg')"></p>
                 <p>В следующей статье мы научимся генерировать нашу руду в мире, рассмотрим, как из руды получить слитки при помощи пережарки в печке, напишем рецепт для ключа и заставим наш блок с замочной скважиной менять свое состояние, если мы его «открываем» ключом, и выдавать редстоун сигнал</p>
-                <a href="https://dmitriy-407.github.io/zig/code/3/web" class="donwload">Исходники</a>
+                <a href="https://dmitry-407.github.io/zig/code/3/web" class="donwload">Исходники</a>
             </div>
         </div>
         <div class="window"></div>
@@ -472,7 +472,7 @@
             <div class="content">
                 <p class="avtor">Автор используемых материалов <a href="https://vk.com/zigthehedge">ZigTheHedge</a></p>
                 <p class="image">Используются изображения с <a href="https://www.minecraft.net">Minecraft.net</a></p>
-                <p class="dev">Разработано <a href="https://vk.com/demon_407">Dmitriy Popov</a></p>
+                <p class="dev">Разработано <a href="https://vk.com/demon_407">dmitry Popov</a></p>
             </div>
         </footer>
         <script src="/zig/script.js" type="text/javascript"></script>

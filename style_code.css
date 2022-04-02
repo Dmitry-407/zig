@@ -131,31 +131,31 @@ body {
 }
 
 .katalog .packet--block .java:before {
-    background-image: url(https://dmitriy-407.github.io/zig/code/java.png);
+    background-image: url(https://dmitry-407.github.io/zig/code/java.png);
 }
 
 .katalog .packet--block .file:before {
-    background-image: url(https://dmitriy-407.github.io/zig/code/lang.png);
+    background-image: url(https://dmitry-407.github.io/zig/code/lang.png);
 }
 
 .katalog .packet--block .json:before {
-    background-image: url(https://dmitriy-407.github.io/zig/code/json.png);
+    background-image: url(https://dmitry-407.github.io/zig/code/json.png);
 }
 
 .katalog .packet--block .img:before {
-    background-image: url(https://dmitriy-407.github.io/zig/code/img.png);
+    background-image: url(https://dmitry-407.github.io/zig/code/img.png);
 }
 
 .katalog .packet--block.pacet--katalog .title--pacet:before {
-    background-image: url(https://dmitriy-407.github.io/zig/code/katalog.png);
+    background-image: url(https://dmitry-407.github.io/zig/code/katalog.png);
 }
 
 .katalog .packet--block.pacet--katalog--2 .title--pacet:before {
-    background-image: url(https://dmitriy-407.github.io/zig/code/katalog-2.png);
+    background-image: url(https://dmitry-407.github.io/zig/code/katalog-2.png);
 }
 
 .katalog .packet--block.pacet .title--pacet:before {
-    background-image: url(https://dmitriy-407.github.io/zig/code/pacet.png);
+    background-image: url(https://dmitry-407.github.io/zig/code/pacet.png);
 }
 
 .code {

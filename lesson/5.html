@@ -5,7 +5,7 @@
         <link href="/zig/font.css" rel="stylesheet" type="text/css"/>
         <link href="/zig/style.css" rel="stylesheet" type="text/css"/>
         <meta property="og:title" content="Урок #5"/>
-        <meta property="vk:image"  content="https://dmitriy-407.github.io/zig/img/5.png"/>
+        <meta property="vk:image"  content="https://dmitry-407.github.io/zig/img/5.png"/>
         <meta charset="utf-8">
         <title>Руководство по моддингу</title>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -46,9 +46,9 @@
                 <h4>И здравствуйте, уважаемые</h4>
                 <p>С вами <b>ZigTheHedge</b> и мы продолжаем мучать <b>forge</b> для майнкрафта <b>1.12.2</b>. <a href="/zig/lesson/4">В прошлый раз</a> мы научились спаунить руду в мире, познакомились с рецептами на верстаке и в печке, а так же добавили функционал нашему блоку с замочком, чтобы он начинал выдавать редстоун-сигнал, если его открыть ключом. В этой статье, мы создадим еще один блок, который будет представлять собой сундук <spna style="color: #ccc;">(контейнер, если быть точным)</spna>, но его можно будет открыть и закрыть. Думаю, мы будем использовать все еще тот самый ключ, который создали во второй статье. Давайте начнем? Поехали!</p>
                 <p>Ну и, для начала, создадим наш блок-сундук. Он пока не будет анимированным, но внешне, все же, будет напоминать ящик под замком. Он будет иметь свойство <b>FACING</b> для того, чтобы его можно было вращать, а это значит, что для его представления в мире понадобится несколько текстур. Вот они:</p>
-                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/lockedchest_front.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/lockedchest_front.png">Скачать</a></div>
-                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/lockedchest_side.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/lockedchest_side.png">Скачать</a></div>
-                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/lockedchest_top.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/lockedchest_top.png">Скачать</a></div>
+                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/lockedchest_front.png)"></p><a download href="https://dmitry-407.github.io/zig/download/lockedchest_front.png">Скачать</a></div>
+                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/lockedchest_side.png)"></p><a download href="https://dmitry-407.github.io/zig/download/lockedchest_side.png">Скачать</a></div>
+                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/lockedchest_top.png)"></p><a download href="https://dmitry-407.github.io/zig/download/lockedchest_top.png">Скачать</a></div>
                 <p>Создадим класс блока почти так же, как мы делали с <b>KeyHole</b>. Дадим ему название <b>LockedChest</b>, регистровое имя <b>lockedchest</b>, свойство <b>FACING</b> и, пожалуй, все</p>
                 <p>Класс блока будет выглядеть вот так:</p>
                 <div class="code">
@@ -315,9 +315,9 @@
                 </div>
                 <p>Я просто создам константу, которой присвою значение <b>«0»</b>, и эта константа будет использоваться для описания порядкового номера <b>GUI</b> нашего недоящика</p>
                 <p class="warn">Текстура <span style="color: #ccc">(ну, в данном случае скорее «картинка», но текстурой от этого она быть не перестает)</span> должна иметь размер <b>256х256</b>. То, что вы нарисуете внутри этой текстуры — дело целиком и полностью ваше, однако, советую придерживаться стандартного майнкрафтовского дизайна интерфейсов, чтобы не сильно пугать игроков. Например, я пользуюсь вот таким шаблоном для интерфейсов своих блоков</p>
-                <div data-brackets-id="41" id="bathroomtile" class="image--donwload"><p data-brackets-id="42" class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/interface.png); width: 256px; height: 256px;"></p><a data-brackets-id="43" download="" href="https://dmitriy-407.github.io/zig/download/interface.png">Скачать</a></div>
+                <div data-brackets-id="41" id="bathroomtile" class="image--donwload"><p data-brackets-id="42" class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/interface.png); width: 256px; height: 256px;"></p><a data-brackets-id="43" download="" href="https://dmitry-407.github.io/zig/download/interface.png">Скачать</a></div>
                 <p>Если мы его немного доделаем, то получим интерфейс для нашего ящика. У меня получилось вот так:</p>
-                <div data-brackets-id="41" id="bathroomtile" class="image--donwload"><p data-brackets-id="42" class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/lockedchest.png); width: 256px; height: 256px;"></p><a data-brackets-id="43" download="" href="https://dmitriy-407.github.io/zig/download/lockedchest.png">Скачать</a></div>
+                <div data-brackets-id="41" id="bathroomtile" class="image--donwload"><p data-brackets-id="42" class="image--info" style="background-image: url(https://dmitry-407.github.io/zig/download/lockedchest.png); width: 256px; height: 256px;"></p><a data-brackets-id="43" download="" href="https://dmitry-407.github.io/zig/download/lockedchest.png">Скачать</a></div>
                 <p>Текстуры интерфейсов я помещу в ресурсы в каталог «textures/<b>gui</b>/», но это — дело вкуса. Файл с текстурой я назову <b>lockedchest.png</b>.</p>
                 <p>Далее, внутри пакета <b>«lockedchest»</b>, мы создадим два класса: один для серверного контейнера, второй — для клиентского. Начнем с серверного. Назову я его <b>LockedChestServerContainer</b>:</p>
                 <div class="code">
@@ -615,7 +615,7 @@
                 </div>
                 <p>Теперь, если мы запустим клиент, то вполне сможем шифт-кликать по слотам для перемещения предметов. Вууу-хууу!</p>
                 <p>Чтож, я думаю, на этом моменте мы закончим статью, так как, чтобы разобраться и въехать в эту непростую тему, я уверен, у вас займет немало времени. Так что capability оставим на следующую статью. И там же, заодно, добьем функционал нашего недоящика, чтобы он открывался и закрывался ключом. Удачи и счаааааастливо!</p>
-                <a href="https://dmitriy-407.github.io/zig/code/5/web" class="donwload">Исходники</a>
+                <a href="https://dmitry-407.github.io/zig/code/5/web" class="donwload">Исходники</a>
             </div>
         </div>
         <div class="window"></div>
@@ -624,7 +624,7 @@
             <div class="content">
                 <p class="avtor">Автор используемых материалов <a href="https://vk.com/zigthehedge">ZigTheHedge</a></p>
                 <p class="image">Используются изображения с <a href="https://www.minecraft.net">Minecraft.net</a></p>
-                <p class="dev">Разработано <a href="https://vk.com/demon_407">Dmitriy Popov</a></p>
+                <p class="dev">Разработано <a href="https://vk.com/demon_407">dmitry Popov</a></p>
             </div>
         </footer>
         <script src="/zig/script.js" type="text/javascript"></script>
