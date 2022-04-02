@@ -1,0 +1,161 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Trattatello;
+    src: url('Trattatello.ttf');
+}
+
+@font-face {
+    font-family: Segoe;
+    src: url('segoe.ttf');
+}
+
+.message {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #060800;
+    width: 800px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 220px;
+}
+
+.message .user {
+    width: 150px;
+    margin-right: 15px;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.message .user .ava {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+.message .user h2 {
+    color: #65b026;
+    text-decoration: none;
+    font-variant: small-caps;
+    font: 20px Segoe;
+    text-align: center;
+}
+
+.message .user .name {
+    font: 16px Segoe;
+    color: #afe482;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.message .user .meny {
+    text-align: center;
+    margin-top: 10px;
+    cursor: default;
+    margin-bottom: 10px;
+}
+
+.message .user .meny a {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(0);
+    transition: transform 550ms;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.message .user .meny a:hover {
+    transform: translateY(-5px);
+}
+
+.message .user .meny a.profil--cw {
+    background-image: url(https://cwelth.com/gfx/profile.png);
+}
+
+.message .user .meny a.profil--vk {
+    background-image: url(https://cwelth.com/gfx/vk.png);
+}
+
+.message .user .meny a.profil--tw {
+    background-image: url(https://cwelth.com/gfx/twitch.png);
+}
+
+.message .user .rep,
+.message .user .warn {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.message .user .rep {
+    background-color: #021d00;
+}
+
+.message .user .rep span {
+    display: block;
+    height: 5px;
+    border-radius: 8px;
+    background-color: #0a8a00;
+}
+
+.message .user .warn {
+    background-color: #380000;
+}
+
+.message .user .warn span {
+    display: block;
+    height: 5px;
+    border-radius: 8px;
+    background-color: #ff0000;
+}
+
+.message .text {
+    width: calc(100% - 185px);
+    display: inline-block;
+}
+
+.message .text time {
+    font: 16px Segoe;
+    color: #afe482;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.message .text time:after {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2px;
+    background-color: #65b026;
+    content: '';
+    display: block;
+}
+
+.message .text p {
+    font: 16px Segoe;
+    color: #498119;
+    font-variant: small-caps;
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cwelth.com/gfx/summer-icon.png" rel="icon"/>
+        <link href="/zig/font.css" rel="stylesheet" type="text/css"/>
+        <link href="/zig/style.css" rel="stylesheet" type="text/css"/>
+        <meta property="og:title" content="Урок #5"/>
+        <meta property="vk:image"  content="https://dmitriy-407.github.io/zig/img/5.png"/>
+        <meta charset="utf-8">
+        <title>Руководство по моддингу</title>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("jquery", "1.3.2");
+            google.load("jqueryui", "1.7.2");
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="content">
+            <a href="/zig/">
+                <div class="forg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ebene_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 316 66.7" style="enable-background:new 0 0 316 66.7;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:#DFA86A;}
+                        .st1{fill:#26303d;}
+                    </style>
+                    <g>
+                        <g>
+                            <polygon class="st0" points="114.1,55.6 125,55.6 125,38.7 143,38.7 143,28.4 125,28.4 125,21.4 144.1,21.4 144.1,11.1     114.1,11.1   "/>
+                            <path class="st0" d="M185.3,16.3c-2.1-2.1-4.6-3.6-7.5-4.7c-2.7-1-5.8-1.5-9-1.5l-0.4,0c-3.4,0-6.5,0.6-9.3,1.7    c-2.9,1.1-5.4,2.7-7.4,4.8c-2.1,2.1-3.7,4.6-4.9,7.5c-1.2,2.9-1.7,6.1-1.7,9.6c0,3.4,0.6,6.6,1.8,9.4c1.2,2.8,2.8,5.3,4.9,7.3    c2.1,2,4.6,3.6,7.4,4.7c2.8,1.1,6,1.7,9.3,1.7h0h0c3.4,0,6.6-0.6,9.4-1.8c2.9-1.1,5.4-2.8,7.5-4.8c2.1-2,3.7-4.5,4.9-7.4    c1.2-2.8,1.8-6,1.8-9.4c0-3.5-0.6-6.7-1.7-9.6C189,20.9,187.3,18.4,185.3,16.3z M180.6,33.1c0,2-0.3,3.8-0.9,5.4    c-0.6,1.6-1.4,3-2.5,4.2c-1,1.1-2.3,2.1-3.8,2.7c-1.5,0.7-3.2,1-5,1c-1.8,0-3.5-0.3-5-1c-1.5-0.7-2.7-1.6-3.8-2.7    c-1.1-1.2-1.9-2.6-2.5-4.2c-0.6-1.6-0.9-3.5-0.9-5.4c0-1.8,0.3-3.5,0.9-5c0.6-1.5,1.4-2.9,2.5-4c1-1.1,2.3-2,3.8-2.7    c1.5-0.6,3.1-1,5-1c1.8,0,3.5,0.3,5,1c1.5,0.6,2.8,1.5,3.8,2.7c1.1,1.1,1.9,2.5,2.5,4C180.3,29.6,180.6,31.3,180.6,33.1z"/>
+                            <path class="st0" d="M224.2,33.3c1.9-2.3,2.9-5.2,2.9-8.6c0-2.6-0.5-4.8-1.5-6.6c-1-1.8-2.4-3.2-4-4.2c-1.6-1-3.4-1.7-5.5-2.1    c-1.9-0.4-4-0.6-6-0.6h-16v44.5h11V38.3h2.3l9.4,17.3h13.1l-11.2-18.6C220.9,36.2,222.8,35,224.2,33.3z M204.9,21h4.4    c0.8,0,1.7,0.1,2.6,0.2c0.8,0.1,1.5,0.3,2.1,0.6c0.5,0.2,0.9,0.6,1.2,1c0.3,0.4,0.4,1,0.4,1.8c0,0.9-0.2,1.6-0.5,2.1    c-0.3,0.5-0.8,0.8-1.3,1c-0.7,0.3-1.5,0.5-2.3,0.6c-1,0.1-2,0.1-2.9,0.1h-3.8V21z"/>
+                            <path class="st0" d="M242.7,24c1-1.1,2.3-2,3.8-2.7c1.5-0.6,3.1-1,5-1c1.8,0,3.6,0.3,5.3,0.9c1.6,0.6,3,1.4,4.1,2.5l1.3,1.3l8-8.1    l-1.5-1.3c-2.4-2.1-5.1-3.6-8.1-4.4c-2.9-0.8-6-1.2-9.2-1.2c-3.4,0-6.5,0.6-9.3,1.7c-2.9,1.1-5.4,2.7-7.4,4.8    c-2.1,2.1-3.7,4.6-4.9,7.5c-1.2,2.9-1.7,6.1-1.7,9.6c0,3.4,0.6,6.6,1.8,9.4c1.2,2.8,2.8,5.3,4.9,7.3c2.1,2,4.6,3.6,7.4,4.7    c2.8,1.1,6,1.7,9.3,1.7c6.5,0,12.5-1.4,17.8-4.3l1-0.5V28h-19.3v10.3h8.4V45c-0.9,0.4-1.8,0.7-2.9,0.9c-1.5,0.3-3.1,0.5-4.8,0.5    c-1.8,0-3.5-0.3-5-1c-1.5-0.7-2.7-1.6-3.8-2.7c-1.1-1.2-1.9-2.6-2.5-4.2c-0.6-1.6-0.9-3.5-0.9-5.4c0-1.8,0.3-3.5,0.9-5    C240.9,26.5,241.7,25.1,242.7,24z"/>
+                            <polygon class="st0" points="285.6,45.3 285.6,38 304.3,38 304.3,27.7 285.6,27.7 285.6,21.4 305.4,21.4 305.4,11.1 274.6,11.1     274.6,55.6 306.4,55.6 306.4,45.3   "/>
+                        </g>
+                        <path class="st1" d="M91.6,16.7l-37.8-1.9l46.2,0v-3.7H47.8l0,7.8v6.2c0,0.1-1.5-9.1-1.9-11.7h-4.1v6.8v6.2   c0,0.1-1.8-10.9-1.9-12.3c-10.4,0-27.9,0-27.9,0c1.9,1.6,12.4,10.6,19.9,14.3c3.7,1.8,8.3,1.9,12.4,2c2.1,0.1,4.2,0.2,5.8,1.8   c2.3,2.2,2.8,5.7,0.8,8.3c-1.9,2.6-7.3,3.2-7.3,3.2L39,49.1v6.4h10.3l0.3-6.3l8.9-6.3c-0.9,0.8-3.1,2.8-6.2,7.7   c-0.7,1.1-1.3,2.3-1.7,3.5c2.2-1.9,6.8-3.2,12.2-3.2c5.3,0,9.9,1.3,12.1,3.2c-0.4-1.2-1-2.4-1.7-3.5c-3.2-4.9-5.3-6.9-6.2-7.7   l8.9,6.3l0.3,6.3h9.6v-6.4l-4.5-5.5c0,0-6.7-0.4-8.4-3.2C67.7,32.6,74.8,20.4,91.6,16.7z"/>
+                    </g>
+                    </svg>
+                </div>
+                <h1>Руководство по моддингу</h1>
+            </a>
+            <div class="body--content">
+                <div class="lesson-header">
+                    <p class="img" style="background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/menu/menu-store.svg)"></p>
+                    <h1>Урок #5</h1>
+                </div>
+                <h4>И здравствуйте, уважаемые</h4>
+                <p>С вами <b>ZigTheHedge</b> и мы продолжаем мучать <b>forge</b> для майнкрафта <b>1.12.2</b>. <a href="/zig/lesson/4">В прошлый раз</a> мы научились спаунить руду в мире, познакомились с рецептами на верстаке и в печке, а так же добавили функционал нашему блоку с замочком, чтобы он начинал выдавать редстоун-сигнал, если его открыть ключом. В этой статье, мы создадим еще один блок, который будет представлять собой сундук <spna style="color: #ccc;">(контейнер, если быть точным)</spna>, но его можно будет открыть и закрыть. Думаю, мы будем использовать все еще тот самый ключ, который создали во второй статье. Давайте начнем? Поехали!</p>
+                <p>Ну и, для начала, создадим наш блок-сундук. Он пока не будет анимированным, но внешне, все же, будет напоминать ящик под замком. Он будет иметь свойство <b>FACING</b> для того, чтобы его можно было вращать, а это значит, что для его представления в мире понадобится несколько текстур. Вот они:</p>
+                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/lockedchest_front.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/lockedchest_front.png">Скачать</a></div>
+                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/lockedchest_side.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/lockedchest_side.png">Скачать</a></div>
+                <div id="bathroomtile" class="image--donwload"><p class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/lockedchest_top.png)"></p><a download href="https://dmitriy-407.github.io/zig/download/lockedchest_top.png">Скачать</a></div>
+                <p>Создадим класс блока почти так же, как мы делали с <b>KeyHole</b>. Дадим ему название <b>LockedChest</b>, регистровое имя <b>lockedchest</b>, свойство <b>FACING</b> и, пожалуй, все</p>
+                <p>Класс блока будет выглядеть вот так:</p>
+                <div class="code">
+                    <span class="color--orang">package</span> ru.zigthehedge.tutorial.blocks<span class="color--orang">;</span><br>
+                    <br>
+                    <span class="color--orang">import</span> net.minecraft.block.Block<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.block.material.Material<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.block.properties.PropertyDirection<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.block.state.BlockStateContainer<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.block.state.IBlockState<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.client.Minecraft<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.client.renderer.block.model.ModelResourceLocation<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.creativetab.CreativeTabs<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.entity.EntityLivingBase<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.item.Item<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.item.ItemStack<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.util.EnumFacing<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.util.ResourceLocation<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.util.math.BlockPos<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.world.World<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraftforge.client.model.ModelLoader<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraftforge.fml.relauncher.Side<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraftforge.fml.relauncher.<span class="color--yellow">SideOnly</span><span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> ru.zigthehedge.tutorial.Tutorial<span class="color--orang">;</span><br>
+                    <br>
+                    <span class="color--orang">public class</span> LockedChest <span class="color--orang">extends</span> Block {<br>
+                        <div>
+                        public static PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL)<span class="color--orang">;</span><br>
+                        <span class="color--orang">public</span> <span class="color--orang--2">LockedChest</span>(){
+                            <div>
+                            <span class="color--orang">super</span>(Material.<span class="color--violet">ROCK</span>)<span class="color--orang">;</span><br>
+                            setRegistryName(<span class="color--green">"lockedchest"</span>)<span class="color--orang">;</span><br>
+                            setUnlocalizedName(Tutorial.<span class="color--violet">MODID</span> + <span class="color--green">".lockedchest"</span>)<span class="color--orang">;</span><br>
+                            setHardness(<span class="color--blue">2F</span>)<span class="color--orang">;</span><br>
+                            setHarvestLevel(<span class="color--green">"axe"</span><span class="color--orang">,</span> <span class="color--blue">1</span>)<span class="color--orang">;</span><br>
+                            setCreativeTab(CreativeTabs.<span class="color--violet">BUILDING_BLOCKS</span>)<span class="color--orang">;</span><br>
+                            setDefaultState(<span class="color--violet">blockState</span>.getBaseState().withProperty(<span class="color--violet">FACING</span><span class="color--orang">,</span> EnumFacing.<span class="color--violet">NORTH</span>))<span class="color--orang">;</span>
+                            </div>
+                        }<br>
+                        <span class="color--yellow">@SideOnly</span>(Side.<span class="color--violet">CLIENT</span>)<br>
+                        <span class="color--orang">public void</span> <span class="color--orang--2">initModel</span>() {
+                            <div>
+                            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this)<span class="color--orang">,</span> <span class="color--blue">0</span><span class="color--orang">, new</span> ModelResourceLocation(getRegistryName()<span class="color--orang">,</span> <span class="color--green">"inventory"</span>))<span class="color--orang">;</span>
+                            </div>
+                        }<br>
+                        <span class="color--yellow">@SideOnly</span>(Side.<span class="color--violet">CLIENT</span>)<br>
+                        <span class="color--orang">public void</span> <span class="color--orang--2">initItemModel</span>() {
+                            <div>
+                            Item itemBlock = Item.<span class="color--violet">REGISTRY</span>.getObject(new ResourceLocation(Tutorial.<span class="color--violet">MODID</span><span class="color--orang">,</span> <span class="color--green">"lockedchest"</span>))<span class="color--orang">;</span><br>
+                            ModelResourceLocation itemModelResourceLocation = <span class="color--orang">new</span> ModelResourceLocation(getRegistryName()<span class="color--orang">,</span> <span class="color--green">"inventory"</span>)<span class="color--orang">;</span><br>
+                            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(itemBlock<span class="color--orang">,</span> <span class="color--blue">0</span><span class="color--orang">,</span> itemModelResourceLocation)<span class="color--orang">;</span>
+                            </div>
+                        }<br>
+                        <span class="color--yellow">@Override</span><br>
+                        <span class="color--orang">public void</span> <span class="color--orang--2">onBlockPlacedBy</span>(World worldIn<span class="color--orang">,</span> BlockPos pos<span class="color--orang">,</span> IBlockState state<span class="color--orang">,</span> EntityLivingBase placer<span class="color--orang">,</span> ItemStack stack) {
+                            <div>
+                            worldIn.setBlockState(pos<span class="color--orang">,</span> state.withProperty(<span class="color--violet">FACING</span><span class="color--orang">,</span> placer.getHorizontalFacing().getOpposite())<span class="color--orang">,</span> <span class="color--blue">2</span>)<span class="color--orang">;</span>
+                            </div>
+                        }<br>
+                        <span class="color--yellow">@Override</span><br>
+                        <span class="color--orang">public int</span> <span class="color--orang--2">getMetaFromState</span>(IBlockState state) {
+                            <div>
+                            <span class="color--orang">return</span> state.getValue(<span class="color--violet">FACING</span>).ordinal()<span class="color--orang">;</span>
+                            </div>
+                        }<br>
+                        <span class="color--yellow">@Override</span><br>
+                        <span class="color--orang">public</span> IBlockState <span class="color--orang--2">getStateFromMeta</span>(<span class="color--orang">int</span> meta) {
+                            <div>
+                            <span class="color--orang">return this</span>.getDefaultState().withProperty(<span class="color--violet">FACING</span><span class="color--orang">,</span> EnumFacing.getHorizontal(meta &#38; <span class="color--blue">7</span>))<span class="color--orang">;</span>
+                            </div>
+                        }<br>
+                        <span class="color--yellow">@Override</span><br>
+                        <span class="color--orang">protected</span> BlockStateContainer <span class="color--orang--2">createBlockState</span>() {
+                            <div>
+                            <span class="color--orang">return new</span> BlockStateContainer(<span class="color--orang">this,</span> <span class="color--violet">FACING</span>)<span class="color--orang">;</span>
+                            </div>
+                        }
+                        </div>
+                    }
+                </div>
+                <p>В объяснениях, думаю, уже не нуждается. Если что-то забыли, то почитайте <a href="/zig/lesson/4">четвертую статью</a></p>
+                <p><b>BlockState</b>-описание для блока:</p>
+                <div class="code">
+                    {
+                    <div>
+                      <span class="color--violet">"forge_marker"</span><span class="color--orang">:</span> <span class="color--blue">1</span><span class="color--orang">,</span><br>
+                      <span class="color--violet">"defaults"</span><span class="color--orang">:</span> {
+                        <div><span class="color--violet">"model"</span><span class="color--orang">:</span> <span class="color--green">"tutorial:lockedchest"</span></div>
+                       }<span class="color--orang">,</span><br>
+                       <span class="color--violet">"variants"</span><span class="color--orang">:</span> {
+                        <div>
+                            <span class="color--violet">"normal"</span><span class="color--orang">:</span> [{}]<span class="color--orang">,</span><br>
+                            <span class="color--violet">"inventory"</span><span class="color--orang">:</span> [{
+                            <div><span class="color--violet">"transform"</span><span class="color--orang">:</span> <span class="color--green">"forge:default-block"</span></div>
+                        }]<span class="color--orang">,</span><br>
+                        <span class="color--violet">"facing"</span><span class="color--orang">:</span> {
+                            <div>
+                                <span class="color--violet">"north"</span><span class="color--orang">:</span> {}<span class="color--orang">,</span><br>
+                                <span class="color--violet">"south"</span><span class="color--orang">:</span> {<span class="color--violet">"y"</span><span class="color--orang">:</span> <span class="color--blue">180</span>}<span class="color--orang">,</span><br>
+                                <span class="color--violet">"west"</span><span class="color--orang">:</span> {<span class="color--violet">"y"</span><span class="color--orang">:</span> <span class="color--blue">270</span>}<span class="color--orang">,</span><br>
+                                <span class="color--violet">"east"</span><span class="color--orang">:</span> {<span class="color--violet">"y"</span><span class="color--orang">:</span> <span class="color--blue">90</span>}
+                            </div>
+                        }
+                        </div>
+                      }
+                    </div>
+                    }
+                </div>
+                <p>Модель для блока:</p>
+                <div class="code">
+                    {
+                    <div>
+                    <span class="color--violet">"parent"</span><span class="color--orang">:</span> <span class="color--green">"block/cube"</span><span class="color--orang">,</span><br>
+                    <span class="color--violet">"textures"</span><span class="color--orang">:</span> {
+                        <div>
+                            <span class="color--violet">"particle"</span><span class="color--orang">:</span> <span class="color--green">"tutorial:blocks/lockedchest_front"</span><span class="color--orang">,</span><br>
+                            <span class="color--violet">"down"</span><span class="color--orang">:</span> <span class="color--green">"tutorial:blocks/lockedchest_top"</span><span class="color--orang">,</span><br>
+                            <span class="color--violet">"up"</span><span class="color--orang">:</span> <span class="color--green">"tutorial:blocks/lockedchest_top"</span><span class="color--orang">,</span><br>
+                            <span class="color--violet">"east"</span><span class="color--orang">:</span> <span class="color--green">"tutorial:blocks/lockedchest_side"</span><span class="color--orang">,</span><br>
+                            <span class="color--violet">"west"</span><span class="color--orang">:</span> <span class="color--green">"tutorial:blocks/lockedchest_side"</span><span class="color--orang">,</span><br>
+                            <span class="color--violet">"north"</span><span class="color--orang">:</span> <span class="color--green">"tutorial:blocks/lockedchest_front"</span><span class="color--orang">,</span><br>
+                            <span class="color--violet">"south"</span><span class="color--orang">:</span> <span class="color--green">"tutorial:blocks/lockedchest_side"</span>
+                        </div>
+                      }
+                    </div>
+                    }
+                </div>
+                <p>Ну и, разумеется, не забываем зарегистрировать наш блок в <b>TutorialBlocks</b>, и прописать его и его предметный вариант в регистрах в <b>CommonProxy</b></p>
+                <p>У меня получилось вот так:</p>
+                <p class="imag" style="background-image: url(https://sun9-18.userapi.com/c854124/v854124523/c8646/5t8ZDv3Lk-E.jpg); height: 300px;" onclick="image('https://sun9-18.userapi.com/c854124/v854124523/c8646/5t8ZDv3Lk-E.jpg')"></p>
+                <p>Теперь нам нужно добавить этому недоящику функционала, чтобы он превратился в настоящий ящик!</p>
+                <div class="info">
+                    <p>Как мы уже знаем, у нас есть возможность использовать <b>свойства</b> блоков для того, чтобы изменять их, ну, свойства. Например, мы нашему ящику добавили свойство <b>FACING</b>, которое определяет поворот блока. А в прошлой статье, мы, для нашего блока с замочной скважиной, указали еще и свойство <b>«открытости»</b>, считывая которое, наш блок выдавал или не выдавал редстоун-сигнал. Значения всех свойств блока мы аккуратно запихивали в <b>метаданные</b> блока, и, при загрузке мира, считывали эти данные и восстанавливали свойства. Казалось бы — чего еще желать? Но давайте на секунду вспомним, какое важное ограничение накладывают метаданные: там всего <b>4 бита</b>! То-есть, если бы мы захотели для нашей замочной скважины ввести еще одно любое, даже самое простое, свойство <span style="color: #ccc;">(типа <b>PropertyBoolean</b>)</span>, мы бы уже не смогли запихнуть все это в мету!</p>
+                    <p class="warn">Если бы мы немного оптимизировались, мы могли бы из свойства <b>PropertyDirection</b> использовать только два бита из трех, потому что наша скважина не могла быть направлена вверх или вниз, а только по сторонам <span style="color: #ccc;">(а стороны — 4, а значения от 0 до 3 влезли бы в два бита)</span>. Таким образом мы бы выиграли еще один бит в мете, который могли бы использовать для простого булевого свойства, но, тем не менее</p>
+                    <p>Так вот для таких случаев, либо же для ситуаций, когда нам нужно хранить в информации о блоке какие-то значения больше 16 <span style="color: #ccc;">(4 бита метаданных, помните?)</span>, был придуман механизм, который называется <b>TileEntity</b> <span style="color: #ccc;">(или <b>«сущность блока»</b>, или, для краткости — <b>TE</b>)</span></p>
+                    <p>Сам по себе <b>TileEntity</b> — это такой же объект в майнкрафте, как блок, или предмет, или монстр. Он создается в момент, когда блок ставится в мир и удаляется, когда блок рушится. И, самое главное, объем данных, который может храниться в <b>TileEntity</b>, не лимитирован ничем, кроме количества оперативной памяти, которое сможет выделить компьютер, на котором будет запущен майнкрафт с вашим модом</p>
+                    <p>Еще <b>TileEntity</b> умеет производить какие-то действия <span style="color: #ccc;">(<b>«тикать»</b>)</span> со временем, или даже отрисовывать какие-то дополнительные элементы на блоке, внутри блока, или вообще в любом удобном месте в мире <span style="color: #ccc;">(так называемый <b>TESR</b> — <b>TileEntitySpecialRenderer</b>)</span></p>
+                    <p>К чему я вам это рассказал? Да к тому, что нам, внутри нашего ящика, нужно будет хранить кучу данных — ведь каждый помещенный в ячейку предмет — это объект, у которого есть свои собственные свойства, и они явно будут превышать по объему 4 бита метаданных. Поэтому, первым делом мы для нашего ящика создадим <b>TileEntity</b></p>
+                </div>
+                <p>Для удобства, все классы, описывающие <b>TileEntity</b>, мы будем хранить в отдельном пакете под именем: <b>«tileentities»</b>. Давайте создадим этот пакет и внутри него создадим класс <b>LockedChestTE</b></p>
+                <p class="warn"><b>TileEntity</b> принято обзывать именем блока, к которому они привязаны плюс <b>«TE»</b> в конце</p>
+                <p>Наш класс должен наследовать базовый класс <b>TileEntity</b>, и обязателно иметь конструктор по-умолчанию <span style="color: #ccc;">(пусть даже и пустой)</span>:</p>
+                <div class="code">
+                    <span class="color--orang">package</span> ru.zigthehedge.tutorial.tileentities<span class="color--orang">;</span><br>
+                    <br>
+                    <span class="color--orang">import</span> net.minecraft.tileentity.TileEntity<span class="color--orang">;</span><br>
+                    <br>
+                    <span class="color--orang">public class</span> LockedChestTE <span class="color--orang">extends</span> TileEntity {
+                    <div>
+                        <span class="color--orang">public</span> <span class="color--orang--2">LockedChestTE</span>()<br>
+                        {<br>
+                        }
+                    </div>
+                    }
+                </div>
+                <p>Что нам нужно сделать внутри класса?</p>
+                <p>Для начала, опишем свойства, которые будет хранить наш тайлэнтити. Свойство будет пока только одно: инвентарь</p>
+                <p>Инвентари в майнкрафте можно описывать несколькими разными способами. Если интересно, как сделано в ванильном сундуке — посмотрите код тайлэнтити ванильного сундука</p>
+                <p>Посморели? Мозг на месте? Окей, тогда забудьте то, что видели, а мы продолжим пользоваться <b>forge</b></p>
+                <p>Создадим свойство типа <b>ItemStackHandler</b> с именем <b>inventory</b>. Это и будет свойство, которое хранит весь инвентарь сундука</p>
+                <div class="code">
+                    ...<br>
+                    <span class="color--orang">public class</span> LockedChestTE <span class="color--orang">extends</span> TileEntity {
+                    <div>
+                        <span class="color--orang">public</span> ItemStackHandler <span class="color--violet">inventory</span> = <span class="color--orang">new</span> ItemStackHandler(<span class="color--blue">27</span>)<span class="color--orang">;</span><br>
+                        <span class="color--orang">public</span> <span class="color--orang--2">LockedChestTE</span>()<br>
+                        {<br>
+                        }
+                    </div>
+                    }
+                </div>
+                <p>В конструкторе свойства создадим сразу объект и в качестве аргумента в конструктор передадим количество ячеек, которое будет содержать наш инвентарь. Мы будем делать интерфейс, похожий на интерфейс обычного одинарного сундука, который может хранить в себе 27 ячеек</p>
+                <p>Прежде, чем описывать поведение нашего инвентаря, нам, так же, как в случае со свойствами блока, нужно описать методы, которые будут знать, что делать, когда нужно сохранить содержимое и загрузить содержимое. Для <b>TileEntity</b> такими методами являются <b>readFromNBT</b> и <b>writeToNBT</b></p>
+                <p class="info">Что такое <b>NBT</b>? Это формат данных майнкрафта. <s>Если честно, как это расшифровывается, я не знаю.</s> Расшифровывается это как <b>Named Binary Tag</b> <span style="color: #ccc;">(спасибо за информацию <a href="https://vk.com/cspider">@cspider</a>)</span>. Вся прелесть в том, что движок майнкрафта умеет работать с <b>NBT «тэгами»</b> <span style="color: #ccc;">(тэг <b>NBT</b> — это сериализированный набор данных)</span> любого объема и самостоятельно записывать эти данные на диск <span style="color: #ccc;">(в сейв мира)</span> и считывать потом с диска, сохраняя целостность. NBT используется в майнкрафте буквально везде, поэтому мы часто будем с ним сталкиваться. Для работы с <b>NBT</b> создано немало облегчающих жизнь классов, так что, ничего сложного нас не ждет <span style="color: #ccc;">(по крайней мере, на данном этапе)</span></p>
+                <p>Вернемся к нашим методам и перегрузим их:</p>
+                <div class="code">
+                    ...<br>
+                    <span class="color--yellow">@Override</span><br>
+                    <span class="color--orang">public void</span> <span class="color--orang--2">readFromNBT</span>(NBTTagCompound compound) {
+                        <div><span class="color--orang">super</span>.readFromNBT(compound)<span class="color--orang">;</span></div>
+                    }<br>
+                    <br>
+                    <span class="color--yellow">@Override</span><br>
+                    <span class="color--orang">public</span> NBTTagCompound <span class="color--orang--2">writeToNBT</span>(NBTTagCompound compound) {
+                        <div><span class="color--orang">return super</span>.writeToNBT(compound)<span class="color--orang">;</span></div>
+                    }<br>
+                    ...
+                </div>
+                <p>После перегрузки, <b>IDEA</b> нам любезно добавила вызов методов из суперкласса. В принципе, ничего плохого в этом нет, но, в нашем случае, эти методы в super ничего не делают. Оставить их, или убрать? Оставим. Знаете почему? Чтобы в момент, когда вы создадите себе отдельные промежуточные классы тайлэнтити для разных типов инвентарей, механизмов, труб, цистерн с жидкостью, или батареек, вы не забыли сохранить данные и в суперклассах тоже</p>
+                <div class="code">
+                    ...<br>
+                    <span class="color--yellow">@Override</span><br>
+                    <span class="color--orang">public void</span> <span class="color--orang--2">readFromNBT</span>(NBTTagCompound compound) {
+                        <div>
+                            <span class="color--orang">super</span>.readFromNBT(compound)<span class="color--orang">;</span><br>
+                            <br>
+                            <span class="color--orang">if</span>(compound.hasKey(<span class="color--green">"inventory"</span>))<span class="color--violet">inventory</span>.deserializeNBT((NBTTagCompound)compound.getTag(<span class="color--green">"inventory"</span>))<span class="color--orang">;</span>
+                        </div>
+                    }<br>
+                    <br>
+                    <span class="color--yellow">@Override</span><br>
+                    <span class="color--orang">public</span> NBTTagCompound <span class="color--orang--2">writeToNBT</span>(NBTTagCompound compound) {
+                        <div>
+                            compound = <span class="color--orang">super</span>.writeToNBT(compound)<span class="color--orang">;</span><br>
+                            compound.setTag(<span class="color--green">"inventory"</span><span class="color--orang">,</span> <span class="color--violet">inventory</span>.serializeNBT())<span class="color--orang">;</span><br>
+                            <span class="color--orang">return</span> compound<span class="color--orang">;</span>
+                        </div>
+                    }<br>
+                    ...
+                </div>
+                <div class="info">
+                    <p>Что я написал в методах? В <b>readFromNBT</b> мы должны считать информацию из полученного тэга в наше свойство <b>«inventory»</b>. У каждого тэга в <b>NBT</b> есть <b>«ключ»</b> — это имя тэга. Поэтому, мы проверяем, есть ли в тэге ключ с именем <b>«inventory»</b> <span style="color: #ccc;">(<b>hasKey</b>)</span> и, если да, то считываем значение по этому ключу <span style="color: #ccc;">(<b>getTag</b>)</span> и отправляем это значение в метод <b>deserializeNBT</b>. <b>ItemStackHandler</b> дальше сам со всем этим добром разберется</p>
+                    <p>В случае с <b>writeToNBT</b> нам надо провернуть обратную операцию. То-есть, записать данные в полученный в методе тэг и вернуть этот тэг движку. Сначала, я отправляю тэг в суперкласс, чтобы он там что-то свое записал, а потом уже вызываю метод <b>setTag</b> с ключом <b>«inventory»</b> и значением, полученным из <b>ItemStackHandler</b> методом <b>serializeNBT</b>. После этой операции, я возвращаю тэг с заполненными данными движку</p>
+                    <p>Имя ключа может быть каким угодно. Я выбрал <b>«inventory»</b>, потому что именно так назвал свойство. Естественно, ключ и имя свойства не обязаны совпадать. Так просто удобнее</p>
+                </div>
+                <p class="warn">Здесь очень важно, чтобы вы поняли принцип работы этих двух методов. Если не смогли сразу понять, что происходит, прочтите код и текст еще раз. Если сейчас не поймете, дальше будет еще хуже!</p>
+                <p>Вы не поверите, но мы создали свой первый <b>TE</b>! Теперь его надо зарегистрировать. В <b>1.12.2</b> нет отдельного события, которое бы вызывалось для регистрации <b>TE</b>, поэтому рекомендуется делать это в событии по регистрации блоков, в самом конце. Откроем <b>CommonProxy</b> и допишем в метод <b>RegisterBlocks</b> строчку с регистрацией:</p>
+                <div class="code">
+                    ...<br>
+                    <span class="color--yellow">@SubscribeEvent</span><br>
+                    <span class="color--orang">public static void</span> registerBlocks(RegistryEvent.Register&#60;Block&#62; event) {
+                        event.getRegistry().register(<span class="color--orang">new</span> BathroomTile())<span class="color--orang">;</span><br>
+                        event.getRegistry().register(<span class="color--orang">new</span> RedoniteOre())<span class="color--orang">;</span><br>
+                        event.getRegistry().register(<span class="color--orang">new</span> KeyHole())<span class="color--orang">;</span><br>
+                        event.getRegistry().register(<span class="color--orang">new</span> LockedChest())<span class="color--orang">;</span><br>
+                        <br>
+                        GameRegistry.registerTileEntity(LockedChestTE.<span class="color--orang">class, new</span> ResourceLocation(Tutorial.<span class="color--violet">MODID</span><span class="color--orang">,</span> <span class="color--green">"lockedchest_te"</span>))<span class="color--orang">;</span>
+                    }<br>
+                    ...
+                </div>
+                <p>Учитывая, что у нас в событии нет регистра, отвечающего за <b>TileEntity</b>, мы обратимся к хранилищу регистров <span style="color: #ccc;">(<b>GameRegistry</b>)</span> и любезно попросим его зарегистрировать наш <b>TE</b> методом <b>registerTileEntity</b>. В качестве аргументов мы указываем класс нашего <b>TE</b> и регистровое имя, которое состоит из <b>«домена»</b> <span style="color: #ccc;">(идентификатора нашего мода)</span> и, собственно, имени. К именам <b>TE</b> мне удобно дописывать <b>«_te»</b> в конец. Стандартов тут нет, делайте так, как вам удобно, главное — имя должно быть уникальным</p>
+                <p>Теперь нам необходимо дополнить класс нашего блока, к которому будет <b>«привязан»</b> наш <b>TE</b>. Делается это перегрузкой методов:</p>
+                <div class="code">
+                    ...<br>
+                    <span class="color--yellow">@Override</span><br>
+                    <span class="color--orang">public boolean</span> <span class="color--orang--2">hasTileEntity</span>(IBlockState state) {
+                        <div><span class="color--orang">return true;</span></div>
+                    }<br>
+                    <br>
+                    <span class="color--yellow">@Nullable<br>
+                    @Override</span><br>
+                    <span class="color--orang">public</span> TileEntity <span class="color--orang--2">createTileEntity</span>(World world<span class="color--orang">,</span> IBlockState state) {
+                        <div><span class="color--orang">return new</span> LockedChestTE()<span class="color--orang">;</span></div>
+                    }<br>
+                    ...
+                </div>
+                <p class="warn">В классе <b>Block</b> есть два метода с именем <b>hasTileEntity</b>. Отличаются они входным параметром. Нужно перегружать тот, у которого во входном параметре есть аргумент типа <b>IBlockState</b>!</p>
+                <p class="warn">В более ранних версиях <b>forge</b> механизм регистрации <b>TE</b> отличался. Классу блока необходимо было имплементировать интерфейс <b>ITileEntityProvider</b>, и описывать его методы, чтобы блок, при появлении в мире, создал <b>TE</b>. Теперь это не нужно и даже считается излишним</p>
+                <p>В перегруженных методах все очевидно. Из <b>hasTileEntity</b> мы возвращаем <b>«истину»</b> <span style="color: #ccc">(<b>true</b>)</span>, чтобы дать понять движку, что у нашего блока есть <b>TE</b>, а в <b>createTileEntity</b> мы просто создаем экземпляр нашего <b>TE</b> и возвращаем его</p>
+                <p class="error">На данном этапе советую вам запустить игру и поставить в мир наш недоящик. Визуально не изменится решительно ничего, но вы сможете понять, что все сделали правильно, если игра не крашнется</p>
+                <p>Теперь давайте начнем делать интерфейс нашему блоку</p>
+                <p><b>Интерфейсы</b> - достаточно сложная и замороченная тема в майнкрафте, особенно, если дело касается инвентарей, так что, налейте себе чайку или чего покрепче, и подготовьте мозг. Сейчас я туда буду вкладывать!</p>
+                <div class="info">
+                    <p>У игроков есть инвентарь. Инвентарь — это экземпляр класса, который имплементирует интерфейс <b>IInventory</b>. В нем хранится набор <b>NBT</b>-тэгов, в которых содержатся предметы. Когда игрок открывает какой-либо инвентарь <span style="color: #ccc">(допустим, мы открыли ванильный сундук)</span> — он получает доступ к <b>контейнеру</b> сундука. Контейнер <span style="color: #ccc">(класс <b>Container</b>)</span> — это способ взаимодействия игрока на стороне клиента и инвентаря на стороне сервера. В результате, действия игрока по перекладыванию предметов синхронизируются с сервером автоматически, нам же, как разработчику, необходимо описать саму модель поведения инвентаря. То-есть, <b>для сервера</b> — определить слоты, которые будут принадлежать <b>TE</b> блока, с которым взаимодействует игрок, и описать поведение предметов по <b>shift</b>-клику по слотам, а <b>для клиента</b> — отрисовать интерфейс и показать, в каких слотах что находится. Так же, при работе с контейнерами, не надо забывать, что мы должны видеть <b>сразу два инвентаря</b>: инвентарь игрока и инвентарь <b>TE</b> блока</p>
+                </div>
+                <p>Начнем мы с контейнеров. Давайте создадим отдельный пакет и назовем его <b>«guis»</b> <span style="color: #ccc">(<b>Graphical User Interface</b> — графический интерфейс пользователя)</span>. В этом пакете создадим класс <b>TutorialGUIs</b> и, все еще внутри пакета <b>«guis»</b> еще один пакет, который назовем <b>«lockedchest»</b>. Дело в том, что для каждого блока, у которого есть интерфейс с инвентарем, у нас будут использоваться <b>минимум</b> два класса. Мне удобнее хранить все, относящиеся к отдельному блоку классы работы с инвентарями, в одном месте</p>
+                <p>Класс <b>TutorialGUIs</b> будет чисто описательным. Нужен он для того, чтобы отличать один <b>GUI</b> от другого. В данный момент, у нас в принципе всего один интерфейс, но вдруг однажды появится еще несколько?</p>
+                <div class="code">
+                    <span class="color--orang">package</span> ru.zigthehedge.tutorial.guis<span class="color--orang">;</span><br>
+                    <br>
+                    <span class="color--orang">public class</span> TutorialGUIs {
+                        <div><span class="color--orang">public static final int</span> <span class="color--violet">LOCKEDCHESTGUI</span> = <span class="color--blue">0</span><span class="color--orang">;</span></div>
+                    }
+                </div>
+                <p>Я просто создам константу, которой присвою значение <b>«0»</b>, и эта константа будет использоваться для описания порядкового номера <b>GUI</b> нашего недоящика</p>
+                <p class="warn">Текстура <span style="color: #ccc">(ну, в данном случае скорее «картинка», но текстурой от этого она быть не перестает)</span> должна иметь размер <b>256х256</b>. То, что вы нарисуете внутри этой текстуры — дело целиком и полностью ваше, однако, советую придерживаться стандартного майнкрафтовского дизайна интерфейсов, чтобы не сильно пугать игроков. Например, я пользуюсь вот таким шаблоном для интерфейсов своих блоков</p>
+                <div data-brackets-id="41" id="bathroomtile" class="image--donwload"><p data-brackets-id="42" class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/interface.png); width: 256px; height: 256px;"></p><a data-brackets-id="43" download="" href="https://dmitriy-407.github.io/zig/download/interface.png">Скачать</a></div>
+                <p>Если мы его немного доделаем, то получим интерфейс для нашего ящика. У меня получилось вот так:</p>
+                <div data-brackets-id="41" id="bathroomtile" class="image--donwload"><p data-brackets-id="42" class="image--info" style="background-image: url(https://dmitriy-407.github.io/zig/download/lockedchest.png); width: 256px; height: 256px;"></p><a data-brackets-id="43" download="" href="https://dmitriy-407.github.io/zig/download/lockedchest.png">Скачать</a></div>
+                <p>Текстуры интерфейсов я помещу в ресурсы в каталог «textures/<b>gui</b>/», но это — дело вкуса. Файл с текстурой я назову <b>lockedchest.png</b>.</p>
+                <p>Далее, внутри пакета <b>«lockedchest»</b>, мы создадим два класса: один для серверного контейнера, второй — для клиентского. Начнем с серверного. Назову я его <b>LockedChestServerContainer</b>:</p>
+                <div class="code">
+                    <span class="color--orang">package</span> ru.zigthehedge.tutorial.guis.lockedchest<span class="color--orang">;</span><br>
+                    <br>
+                    <span class="color--orang">import</span> net.minecraft.entity.player.EntityPlayer<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.inventory.Container<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.inventory.IInventory<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.inventory.Slot<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> ru.zigthehedge.tutorial.tileentities.LockedChestTE<span class="color--orang">;</span><br>
+                    <br>
+                    <span class="color--orang">public class</span> LockedChestServerContainer <span class="color--orang">extends</span> Container {
+                    <div>
+                        <span class="color--orang">public</span> LockedChestTE <span class="color--violet">tileEntity</span><span class="color--orang">;</span><br>
+                        <br>
+                        <span class="color--orang">public</span> <span class="color--orang--2">LockedChestServerContainer</span>(IInventory playerInventory<span class="color--orang">,</span> LockedChestTE te) {
+                        <div>
+                            <span class="color--orang">this</span>.<span class="color--violet">tileEntity</span> = te<span class="color--orang">;</span><br>
+                            addPlayerSlots(playerInventory)<span class="color--orang">;</span>
+                        </div>
+                        }<br>
+                        <br>
+                        <span class="color--orang">private void</span> <span class="color--orang--2">addPlayerSlots</span>(IInventory playerInventory) {
+                        <div>
+                            <span class="color--orang">for</span> (<span class="color--orang">int</span> row = <span class="color--blue">0</span><span class="color--orang">;</span> row &#60; <span class="color--blue">3</span><span class="color--orang">;</span> ++row) {
+                            <div>
+                                <span class="color--orang">for</span> (<span class="color--orang">int</span> col = <span class="color--blue">0</span><span class="color--orang">;</span> col &#60; <span class="color--blue">9</span><span class="color--orang">;</span> ++col) {
+                                <div>
+                                    <span class="color--orang">int</span> x = <span class="color--blue">7</span> + col * <span class="color--blue">18</span><span class="color--orang">;</span><br>
+                                    <span class="color--orang">int</span> y = row * <span class="color--blue">18</span> + <span class="color--blue">73</span><span class="color--orang">;</span><br>
+                                    <span class="color--orang">this</span>.addSlotToContainer(<span class="color--orang">new</span> Slot(playerInventory<span class="color--orang">,</span> col + row * <span class="color--blue">9</span> + <span class="color--blue">10</span> - <span class="color--blue">1</span><span class="color--orang">,</span> x<span class="color--orang">,</span> y))<span class="color--orang">;</span>
+                                </div>
+                                }
+                            </div>
+                            }<br>
+                            <span class="color--orang">for</span> (<span class="color--orang">int</span> row = <span class="color--blue">0</span><span class="color--orang">;</span> row &#60; <span class="color--blue">9</span><span class="color--orang">;</span> ++row) {
+                            <div>
+                                <span class="color--orang">int</span> x = <span class="color--blue">7</span> + row * <span class="color--blue">18</span><span class="color--orang">;</span><br>
+                                <span class="color--orang">int</span> y = <span class="color--blue">58</span> + <span class="color--blue">73</span><span class="color--orang">;</span><br>
+                                <span class="color--orang">this</span>.addSlotToContainer(<span class="color--orang">new</span> Slot(playerInventory<span class="color--orang">,</span> row<span class="color--orang">,</span> x<span class="color--orang">,</span> y))<span class="color--orang">;</span>
+                            </div>
+                            }
+                        </div>
+                        }<br>
+                        <br>
+                        <span class="color--yellow">@Override</span><br>
+                        <span class="color--orang">public boolean</span> <span class="color--orang--2">canInteractWith</span>(EntityPlayer playerIn) {
+                        <div>
+                            <span class="color--orang">return true;</span>
+                        </div>
+                        }
+                    </div>
+                    }
+                </div>
+                <div class="info">
+                    <p>Наш класс будет наследовать класс <b>Container</b>. В конструктор будут передаваться два аргумента: инвентарь игрока и тайлэнтити, чей интерфейс мы открываем. Причем, ссылку на тайлэнтити мы, на всякий случай, сохраним в свойстве класса</p>
+                    <p>Метод <b>addPlayerSlots</b> является стандартным способом добавить слоты, содержащие инвентарь игрока, а так же — слоты хотбара. Каждый раз, когда вы открываете какой-то инвентарь, нижняя часть интерфейса, где представлен инвентарь игрока, как раз отрисовывается подобным методом в контейнере. В принципе, можно создать интерфейс, в котором не будет видно инвентарь игрока. Не знаю, зачем это может понадобиться, но такая возможность есть</p>
+                    <p>Инвентарь игрока в майнкрафте представляет из себя массив из <b>41</b> элемента. От <b>0</b> до <b>8</b> — слоты хотбара, от <b>9</b> до <b>35</b> — слоты инвентаря, <b>36</b> и выше — броня и оффхэнд</p>
+                    <p>В методе мы добавляем слоты, которые привязываем к слотам инвентаря игрока. <b>27 слотов</b>. Три ряда по 9 слотов. Для каждого слота, нам необходимо указать координаты, по которым будет отрисован слот в интерфейсе, а также указать, какой именно слот из <b>IInventory</b> будет привязан к создаваемому слоту. Координаты мы указываем согласно нарисованной картинке. Для <b>«стандартных»</b> ячеек инвентаря игрока достаточно использовать базовый класс <b>Slot</b>. У него много различных конструкторов и, если вы не хотите как-то поиздеваться над слотом, то вам будет достаточно базового класса</p>
+                    <p>После добавления слотов инвентаря, нужно добавить еще <b>9</b> — это слоты хотбара игрока</p>
+                    <p class="warn">Если вы хотите в интерфейсе так же вывести слоты брони, то вы теперь должны догадаться, как это сделать</p>
+                </div>
+                <p>Перегруженный абстрактный метод <b>canInteractWith</b> служит для определения — может ли игрок взаимодействовать с этим инвентарем. Здесь логика работы полностью ложится на плечи разработчика мода. Мы можем, например, запретить открывать ящик, если над ним есть блок <span style="color: #ccc;">(как это сделано с ванильным сундуком)</span>, или, например, снизу, или - с очень большого расстояния. Вариантов множество. Но, для простоты, я просто верну здесь <b>«истину»</b>, чтобы наш инвентарь открывался всегда</p>
+                <p>Чтож, мы создали серверный контейнер. Но в данный момент он содержит только слоты инвентаря игрока, который обратился к контейнеру. Это, конечно, здорово, но достаточно бесполезно, так как мы не дали возможность игроку перемещать предметы между своим инвентарем и инвентарем ящика. Давайте исправим это. Создадим еще один метод:</p>
+                <div class="code">
+                    ...<br>
+                    <span class="color--orang">private void</span> <span class="color--orang--2">addOwnSlots</span>(){
+                    <div>
+                        <span class="color--orang">for</span> (<span class="color--orang">int</span> row = <span class="color--blue">0</span><span class="color--orang">;</span> row &#60; <span class="color--blue">3</span><span class="color--orang">;</span> ++row) {
+                        <div>
+                            <span class="color--orang">for</span> (<span class="color--orang">int</span> col = <span class="color--blue">0</span><span class="color--orang">;</span> col &#60; <span class="color--blue">9</span><span class="color--orang">;</span> ++col) {
+                            <div>
+                                <span class="color--orang">int</span> x = <span class="color--blue">7</span> + col * <span class="color--blue">18</span><span class="color--orang">;</span><br>
+                                <span class="color--orang">int</span> y = row * <span class="color--blue">18</span> + <span class="color--blue">7</span><span class="color--orang">;</span><br>
+                                <span class="color--orang">this</span>.addSlotToContainer(<span class="color--orang">new</span> SlotItemHandler(<span class="color--violet">tileEntity.inventory</span><span class="color--orang">,</span> col + row * <span class="color--blue">9</span><span class="color--orang">,</span> x<span class="color--orang">,</span> y))<span class="color--orang">;</span>
+                            </div>
+                            }
+                        </div>
+                        }
+                    </div>
+                    }<br>
+                    ...
+                </div>
+                <p>Этот метод добавит еще <b>27</b> слотов. На этот раз с привязкой к <b>ItemStackHandler</b>, который мы добавили в качестве свойства нашей <b>TE</b>. Чтобы использовать <b>ItemStackHandler</b> вместо <b>IInventory</b>, есть специальный вариант класса <b>Slot</b> под названием <b>SlotItemHandler</b>. Работает он по тому же принципу, что и родительский класс</p>
+                <p>Теперь не забудем вызвать этот метод в конструкторе контейнера:</p>
+                <div class="code">
+                    ...<br>
+                    <span class="color--orang">public</span> <span class="color--orang--2">LockedChestServerContainer</span>(IInventory playerInventory<span class="color--orang">,</span> LockedChestTE te) {
+                    <div>
+                        <span class="color--orang">this</span>.<span class="color--violet">tileEntity</span> = te<span class="color--orang">;</span><br>
+                        addOwnSlots()<span class="color--orang">;</span><br>
+                        addPlayerSlots(playerInventory)<span class="color--orang">;</span>
+                    </div>
+                    }<br>
+                    ...
+                </div>
+                <p>Мы состряпали класс серверного контейнера. Теперь — дело за клиентским. В пакете <b>«lockedchest»</b> создадим класс <b>LockedChestGUI</b>:</p>
+                <div class="code">
+                    <span class="color--orang">package</span> ru.zigthehedge.tutorial.guis.lockedchest<span class="color--orang">;</span><br>
+                    <br>
+                    <span class="color--orang">import</span> net.minecraft.client.gui.inventory.GuiContainer<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.entity.player.EntityPlayer<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> net.minecraft.util.ResourceLocation<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> ru.zigthehedge.tutorial.Tutorial<span class="color--orang">;</span><br>
+                    <span class="color--orang">import</span> ru.zigthehedge.tutorial.tileentities.LockedChestTE<span class="color--orang">;</span><br>
+                    <br>
+                    <span class="color--orang">public class</span> LockedChestGUI <span class="color--orang">extends</span> GuiContainer {
+                    <div>
+                        <span class="color--orang">public static final int</span> <span class="color--violet">WIDTH</span> = <span class="color--blue">174</span><span class="color--orang">;</span><br>
+                        <span class="color--orang">public static final int</span> <span class="color--violet">HEIGHT</span> = <span class="color--blue">154</span><span class="color--orang">;</span><br>
+                        <span class="color--orang">private</span> LockedChestTE te<span class="color--orang">;</span><br>
+                        <span class="color--orang">private static</span> ResourceLocation <span class="color--violet">background</span> = <span class="color--orang">new</span> ResourceLocation(Tutorial.<span class="color--violet">MODID</span><span class="color--orang">,</span> <span class="color--green">"textures/gui/lockedchest.png"</span>)<span class="color--orang">;</span><br>
+                        <br>
+                        <span class="color--orang">public</span> <span class="color--orang--2">LockedChestGUI</span>(LockedChestTE tileEntity<span class="color--orang">,</span> LockedChestServerContainer container) {
+                        <div>
+                            <span class="color--orang">super</span>(container)<span class="color--orang">;</span><br>
+                            <span class="color--violet">te</span> = tileEntity<span class="color--orang">;</span><br>
+                            <span class="color--violet">xSize</span> = <span class="color--violet">WIDTH</span><span class="color--orang">;</span><br>
+                            <span class="color--violet">ySize</span> = <span class="color--violet">HEIGHT</span><span class="color--orang">;</span>
+                        </div>
+                        }<br>
+                        <br>
+                        <span class="color--yellow">@Override</span><br>
+                        <span class="color--orang">public void</span> <span class="color--orang--2">drawScreen</span>(<span class="color--orang">int</span> mouseX<span class="color--orang">, int</span> mouseY<span class="color--orang">, float</span> partialTicks) {
+                        <div>
+                            <span class="color--orang">this</span>.drawDefaultBackground()<span class="color--orang">;</span><br>
+                            <span class="color--orang">super</span>.drawScreen(mouseX<span class="color--orang">,</span> mouseY<span class="color--orang">,</span> partialTicks)<span class="color--orang">;</span><br>
+                            renderHoveredToolTip(mouseX<span class="color--orang">,</span> mouseY)<span class="color--orang">;</span>
+                        </div>
+                        }<br>
+                        <br>
+                        <span class="color--yellow">@Override</span><br>
+                        <span class="color--orang">protected void</span> <span class="color--orang--2">drawGuiContainerBackgroundLayer</span>(<span class="color--orang">float</span> partialTicks<span class="color--orang">, int</span> mouseX<span class="color--orang">, int</span> mouseY) {
+                        <div>
+                            <span class="color--violet">mc</span>.getTextureManager().bindTexture(<span class="color--violet">background</span>)<span class="color--orang">;</span><br>
+                            drawTexturedModalRect(<span class="color--violet">guiLeft</span><span class="color--orang">,</span> <span class="color--violet">guiTop</span><span class="color--orang">,</span> <span class="color--blue">0</span><span class="color--orang">,</span> <span class="color--blue">0</span><span class="color--orang">,</span> <span class="color--violet">xSize</span><span class="color--orang">,</span> <span class="color--violet">ySize</span>)<span class="color--orang">;</span>
+                        </div>
+                        }
+                    </div>
+                    }
+                </div>
+                <p>Наш класс наследует базовый класс для отрисовки интерфейсов — <b>GUIContainer</b>. И содержит аж четыре свойства. Первые два нам нужны для удобства — чтобы мы всегда знали, какой фактический размер у нашего <b>GUI</b>. Для моей картинки, из общего объема <span style="color: #ccc;">(<b>256х256</b>)</span> фактически занято пространство размерами <b>174</b> на <b>154</b> пикселя. Эти значения я и указываю в переменных <b>WIDTH</b> и <b>HEIGHT</b>. Дальше у нас идет ссылка на <b>TE</b>, которой принадлежит этот интерфейс, и ссылка на текстуру с <b>GUI</b> в виде <b>ResourceLocation</b></p>
+                <p>В конструктор клиентского контейнера поступают два аргумента: ссылка на <b>TE</b> и ссылка на серверный контейнер</p>
+                <p class="warn">Для данного примера, нам не обязательно передавать в контейнер ссылку на <b>TE</b>, так как она нигде в коде не используется. Но я ее оставил специально, чтобы показать, каким образом вам поступать, когда она, все же, понадобится. А понадобится она как только ваш интерфейс будет отображать данные, которые находятся в <b>TE</b>. Самый простой пример - прогресс жарки в печке. Это значение хранится в <b>TE</b>, и, чтобы вам вывести его визуально на экран интерфейса, понадобится ссылка на нужный экземпляр <b>TE</b> печки</p>
+                <div class="info">
+                    <p>Внутри конструктора, мы просто вызываем конструктор суперкласса и присваиваем остальные значения в переменные. Важным моментом является указание значений для свойств <b>xSize</b> и <b>ySize</b>. Это внутренние переменные класса <b>GUIContainer</b>, значения которых будут использоваться при центрировании интерфейса на экране, когда игрок начнет взаимодействие с блоком</p>
+                    <p>Дальше идут два перегруженных метода:</p>
+                    <p><b>drawScreen</b> нам понадобится для того, чтобы <b>«затемнить»</b> фон при открытом интерфейсе и вывести всплывающие подсказки, когда игрок наводит мышку на слот в интерфейсе</p>
+                    <p><b>drawGuiContainerBackground</b> нужен для того, чтобы вывести нашу текстуру на экран. Делается это в два шага</p>
+                    <p>Шаг первый: привязать текстуру к рендереру</p>
+                    <p>Шаг второй: вывести на экран прямоугольник заданного размера в заданное место с привязанной заранее текстурой</p>
+                </div>
+                <p>Окей. Мы описали два контейнера для нашей <b>TE</b>. Серверный и клиентский. Теперь нам нужен класс, который свяжет эти два контейнера. Давайте создадим его в пакете <b>«guis»</b> и назовем <b>GUIHandler</b></p>
+                <div class="code no--color">
+                    package ru.zigthehedge.tutorial.guis;<br>
+                    <br>
+                    import net.minecraft.entity.player.EntityPlayer;<br>
+                    import net.minecraft.util.math.BlockPos;<br>
+                    import net.minecraft.world.World;<br>
+                    import net.minecraftforge.fml.common.network.IGuiHandler;<br>
+                    import ru.zigthehedge.tutorial.guis.lockedchest.LockedChestGUI;<br>
+                    import ru.zigthehedge.tutorial.guis.lockedchest.LockedChestServerContainer;<br>
+                    import ru.zigthehedge.tutorial.tileentities.LockedChestTE;<br>
+                    import javax.annotation.Nullable;<br>
+                    <br>
+                    public class GUIHandler implements IGuiHandler {
+                    <div>
+                        @Nullable<br>
+                        @Override<br>
+                        public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+                        <div>
+                            BlockPos pos = new BlockPos(x, y, z);<br>
+                            if(ID == TutorialGUIs.LOCKEDCHESTGUI) {
+                            <div>
+                                LockedChestTE te = (LockedChestTE) world.getTileEntity(pos);<br>
+                                return new LockedChestServerContainer(player.inventory, te);
+                            </div>
+                            }
+                            return null;
+                        </div>
+                        }<br>
+                        <br>
+                        @Nullable<br>
+                        @Override<br>
+                        public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+                        <div>
+                            BlockPos pos = new BlockPos(x, y, z);<br>
+                            if(ID == TutorialGUIs.LOCKEDCHESTGUI) {
+                            <div>
+                                LockedChestTE te = (LockedChestTE) world.getTileEntity(pos);<br>
+                                return new LockedChestGUI(te, new LockedChestServerContainer(player.inventory, te));
+                            </div>
+                            }<br>
+                            return null;
+                        </div>
+                        }
+                    </div>
+                    }
+                </div>
+                <p>Класс имплементирует интерфейс <b>IGuiHandler</b>, в котором присутствуют всего два метода, которые нам и необходимо описать</p>
+                <div class="info">
+                    <p>Как видно из названий, первый метод нам должен вернуть объект, содержащий экземпляр серверного контейнера, второй — клиентского контейнера. Из предоставленных в методы параметров, нам несложно получить координаты блока, для которого необходимо построить контейнер, взять по этим координатам <b>TE</b> и, воспользовавшись этими данными, вернуть новый экземпляр контейнера. Правда, обратите внимание на параметр <b>ID</b>. Это идентификатор интерфейса, который потребуется открыть. Именно для того, чтобы не запоминать, какому интерфейсу соответствует какой идентификатор, мы и создали класс <b>TutorialGUIs</b>. Так что, перед тем, как что-то конструировать, необходимо удостовериться, что нас попросили тот или иной контейнер</p>
+                    <p>Идентификаторы нужны по одной простой причине: все наши интерфейсы будут обрабатываться одним и тем же обработчиком <span style="color: #ccc;">(<b>GUIHandler</b>)</span>.</p>
+                </div>
+                <p>Чтож, мы почти у цели. Осталось две вещи: зарегистрировать наш обработчик <b>GUI</b> и, собственно, послать команду на открытие <b>GUI</b> при взаимодействии с блоком</p>
+                <p>Для регистрации <b>GUI</b>, нам придется вернуться в наш Самый Первый Класс — то-есть, в <b>Tutorial</b>! И дописать туда пару строк:</p>
+                <div class="code no--color">
+                    ...<br>
+                    @Mod.Instance(Tutorial.MODID)<br>
+                    public static Tutorial instance;<br>
+                    ...<br>
+                </div>
+                <p>Мы создадим ссылку на инстанс нашего главного класса <span style="color: #ccc;">(инстанциируем его)</span>. То-есть, когда фордж создаст экземпляр главного класса нашего мода, мы сможем получить ссылку на этот экземпляр. Делается это благодаря аннотации <b>@Mod.Instance</b></p>
+                <p>Теперь откроем метод <b>init</b> в <b>CommonProxy</b> и допишем туда регистрацию нашего обработчика <b>GUI</b>:</p>
+                <div class="code no--color">
+                    ...<br>
+                    NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GUIHandler());<br>
+                    ...
+                </div>
+                <p>В методе регистрации <b>GUI</b> необходима ссылка на класс, который владеет этим обработчиком. Это должен быть главный класс мода. Именно ради получения этой ссылки мы и инстанциировали синглтон класса мода в предыдущем шаге. В качестве второго аргумента мы, что логично, передаем новый экземпляр класса-обработчика</p>
+                <p>Теперь последний штрих! Для блока, который мы сегодня создали, нужно перегрузить метод <b>onBlockActivated</b>:</p>
+                <div class="code no--color">
+                    ...<br>
+                    @Override<br>
+                    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+                    <div>
+                        if(!worldIn.isRemote)<br>
+                        {
+                        <div>
+                            if(!playerIn.isSneaking())<br>
+                            {
+                            <div>
+                                playerIn.openGui(Tutorial.instance, TutorialGUIs.LOCKEDCHESTGUI, worldIn, pos.getX(), pos.getY(), pos.getZ());
+                            </div>
+                            }
+                        </div>
+                        }<br>
+                        return true;
+                    </div>
+                    }<br>
+                    ...
+                </div>
+                <p>Здесь мы сначала проверяем, что находимся на сервере <span style="color: #ccc;">(<b>worldIn.isRemote</b> — ложь)</span>, затем проверяем, не зажал ли игрок <b>SHIFT</b> <span style="color: #ccc;">(<b>playerIn.isSneaking</b> — ложь)</span>, и, наконец, отправляем на сервер команду на открытие интерфейса! Делается это из экземпляра класса игрока методом <b>openGui</b>. В качестве аргументов мы передаем:</p>
+                <ul>
+                    <li>Ссылку на инстанс мода</li>
+                    <li>Идентификатор GUI, который требуется открыть</li>
+                    <li>Ссылка на объект мира, в котором игрок открывает интерфейс</li>
+                    <li>Координаты, где находится блок</li>
+                </ul>
+                <p class="imag" style="background-image: url(https://sun9-26.userapi.com/c854124/v854124131/c7aaf/hEmuqmKm2IU.jpg); height: 300px;" onclick="image('https://sun9-26.userapi.com/c854124/v854124131/c7aaf/hEmuqmKm2IU.jpg')"></p>
+                <p>Если вы все сделали правильно, по правому клику на блоке у вас откроется интерфейс. И вы даже сможете перетаскивать предметы мышкой между своим инвентарем и инвентарем недоящика. <b>Но только мышкой</b>. <b>Shift+click</b> не сработает. Почему? Потому что это — отдельный метод! Давайте вернемся в наш класс серверного контейнера <span style="color: #ccc;">(<b>LockedChestServerContainer</b>)</span> и допишем немного функционала. Нам нужно перегрузить метод под названием <b>transferStackInSlot</b>:</p>
+                <div class="code no--color">
+                    ...<br>
+                    @Nullable<br>
+                    @Override<br>
+                    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index) {
+                    <div>
+                        ItemStack itemstack = ItemStack.EMPTY;<br>
+                        Slot slot = this.inventorySlots.get(index);<br>
+                        if (slot != null &#38;&#38; slot.getHasStack()) {
+                        <div>
+                            ItemStack itemstack1 = slot.getStack();<br>
+                            itemstack = itemstack1.copy();<br>
+                            if (index &#60; 27) {
+                            <div>
+                                if (!this.mergeItemStack(itemstack1, 27, this.inventorySlots.size(), true)) {
+                                    <div>return ItemStack.EMPTY;</div>
+                                }
+                            </div>
+                                } else if (!this.mergeItemStack(itemstack1, 0, 27, false)) {
+                            <div>return ItemStack.EMPTY;</div>
+                                }<br>
+                            if (itemstack1.isEmpty()) {
+                                <div>slot.putStack(ItemStack.EMPTY);</div>
+                            } else {
+                                <div>slot.onSlotChanged();</div>
+                            }
+                        </div>
+                        }<br>
+                        return itemstack;
+                    </div>
+                    }<br>
+                    ...
+                </div>
+                <div class="info">
+                    <p>Написаный здесь код гуляет от одного мода к другому и его можно уже считать стандартным, но, давайте я попробую объяснить, что именно в нем происходит:</p>
+                    <p>Входящий аргумент <b>index</b> указывает на слот, на котором игрок сделал <b>Shift+Click</b></p>
+                    <p><b>this.inventorySlots</b> — это массив с набором слотов контейнера <span style="color: #ccc;">(мы его сами заполняли методами <b>addSlotToContainer</b>)</span></p>
+                    <p>Если в этом слоте что-то есть <span style="color: #ccc;">(и если игрок не промахнулся мимо слотов)</span>, то мы берем содержимое этого слота в переменную <b>itemstack1</b> и копируем его в переменную <b>itemstack</b></p>
+                    <p>Если индекс слота, по которому кликнул игрок меньше <b>27</b> <span style="color: #ccc;">(а мы с вами сначала заполнили контейнер слотами самого <b>TE</b> в конструкторе контейнера методом <b>addOwnSlots</b>)</span>, то это будет означать, что игрок кликнул по слоту, принадлежащему <b>TE</b></p>
+                    <p>В таком случае, нам надо попробовать засунуть содержимое <b>itemstack1</b> в любой доступный слот с индексами от <b>27</b> до максимального. Для этого вызывается метод <b>mergeItemStack</b>, в котором указывается какой именно <b>ItemStack</b> надо попробовать запихнуть, индекс слота с которого нужно начать попытки и индекс слота до которого надо пытаться. Конечный слот указывается исключительно <span style="color: #ccc;">(то-есть, если мы укажем, например, <b>27, 45</b> — то метод будет пытаться засунуть в слоты с <b>27</b> по <b>44</b>)</span>. Последний параметр указывает <b>направление перечисления. Истина</b> — означает, что попытки будут идти от последнего индекса к первому. <b>Ложь</b> — от первого к последнему</p>
+                    <p>Если у метода не получилось поместить содержимое, он выдаст ложь на выходе. И нам, в таком случае, необходимо вернуть пустой <b>ItemStack</b> из метода <span style="color: #ccc;">(перемещение не удалось)</span>. В каком случае может не получиться перемещение? Например, в случае, если инвентарь забит и новый стак туда уже не лезет</p>
+                    <p>Если же игрок кликнул по слоту с индексом больше <b>26</b>, значит перемещать мы пытаемся из инвентаря игрока в инвентарь <b>TE</b>. Принцип тот же самый - пытаемся переместить <b>ItemStack</b>, если не получилось — возвращаем пустой <b>ItemStack.EMPTY</b></p>
+                    <p>Дальше, если у нас изменился <b>itemstack1</b>, то нужно обновить информацию в слоте, по которому кликнул игрок. И вернуть в итоге то, что осталось в слоте</p>
+                </div>
+                <p>Теперь, если мы запустим клиент, то вполне сможем шифт-кликать по слотам для перемещения предметов. Вууу-хууу!</p>
+                <p>Чтож, я думаю, на этом моменте мы закончим статью, так как, чтобы разобраться и въехать в эту непростую тему, я уверен, у вас займет немало времени. Так что capability оставим на следующую статью. И там же, заодно, добьем функционал нашего недоящика, чтобы он открывался и закрывался ключом. Удачи и счаааааастливо!</p>
+                <a href="https://dmitriy-407.github.io/zig/code/5/web" class="donwload">Исходники</a>
+            </div>
+        </div>
+        <div class="window"></div>
+        <p class="up" onclick="up()"></p>
+        <footer>
+            <div class="content">
+                <p class="avtor">Автор используемых материалов <a href="https://vk.com/zigthehedge">ZigTheHedge</a></p>
+                <p class="image">Используются изображения с <a href="https://www.minecraft.net">Minecraft.net</a></p>
+                <p class="dev">Разработано <a href="https://vk.com/demon_407">Dmitriy Popov</a></p>
+            </div>
+        </footer>
+        <script src="/zig/script.js" type="text/javascript"></script>
+    </body>
+</html>

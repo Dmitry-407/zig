@@ -1,0 +1,291 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Trattatello;
+    src: url('Trattatello.ttf');
+}
+
+@font-face {
+    font-family: Segoe;
+    src: url('segoe.ttf');
+}
+
+body {
+    background-color: #060800;
+}
+
+header:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 444px;
+    background-position: center;
+}
+
+header.summer:before {
+    background-image: url(https://cwelth.com/gfx/summer-top.jpg);
+}
+
+header nav {
+    margin-top: -40px;
+    text-align: center;
+}
+
+header.summer nav a {
+    color: #65b026;
+}
+
+header nav a {
+    position: relative;
+    display: inline-block;
+    font-family: Trattatello;
+    font-size: 48px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-variant: small-caps;
+    text-decoration: inherit;
+    transform: translateY(0);
+    transition: transform 250ms, color 250ms;
+}
+
+header nav a:hover {
+    color: #7db44e;
+    transform: translateY(-5px);
+}
+
+.content {
+    width: 1080px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content section {
+    display: inline-block;
+    position: absolute;
+}
+
+.content .user--block {
+    width: 320px;
+    height: calc(100% - 500px);
+    position:-webkit-sticky;
+    position: sticky;
+    top: 30px;
+    margin-right: 10px;
+}
+
+.content .user {
+    position:-webkit-sticky;
+    position: sticky;
+    top: 30px;
+}
+
+.content .user .logo.summer {
+    background-image: url(https://cwelth.com/gfx/summer-logo.png);
+}
+
+.content .user .logo {
+    width: 320px;
+    height: 140px; 
+    margin-bottom: 10px;
+}
+
+.content .user .login b {
+    display: block;
+    text-align: right;
+    color: #afe482;
+    font-variant: small-caps;
+    font-family: Segoe;
+}
+
+.content .user .login form {
+    margin-top: 5px;
+}
+
+.content .user .login form label {
+    font: 16px Segoe;
+    font-variant: small-caps;
+    color: #7db44e;
+    display: block;
+    text-align: right;
+}
+
+.content .user .login form input {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    width: 220px;
+    margin-left: 100px;
+    border-bottom: 1.5px solid #7db44e;
+    outline: inherit;
+    transition: border 550ms;
+    margin-bottom: 10px;
+}
+
+.content .user .login form input:focus {
+    border-bottom: 1.5px solid #65b026;
+}
+
+.content .user .login form input[type="submit"] {
+    border: none;
+    background-color: #7db44e;
+    transition: background 550ms;
+    width: 80px;
+    padding: 5px 10px;
+    float: right;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font: 16px Segoe;
+}
+
+.content .user .login form input[type="submit"]:hover {
+    background-color: #afe482;
+}
+
+.content .user .regist .text {
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+    font-variant: small-caps;
+    font-family: Segoe;
+    font-size: 16px;
+    color: #afe482;
+}
+
+.content .user .regist .text a {
+    display: inline-block;
+    color: #65b026;
+    text-decoration: inherit;
+    transform: translateY(0);
+    transition: color 250ms, transform 250ms;
+}
+
+.content .user .regist .text a:hover {
+    color: #7db44e;
+    transform: translateY(-3px);
+}
+
+.content .user .regist {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+
+.content .user .regist .vk,
+.content .user .regist .tvis {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: bottom;
+    margin-left: 5px;
+    transform: translateY(0);
+    transition: transform 250ms;
+}
+
+.content .user .regist .vk:hover,
+.content .user .regist .tvis:hover {
+    transform: translateY(-5px);
+} 
+
+.content .user .regist .vk {
+    background-image: url(https://cwelth.com/gfx/vklogo.png);
+}
+
+.content .user .regist .tvis {
+    background-image: url(https://cwelth.com/gfx/twitchlogo.png);
+}
+
+.content .body .packs {
+    padding: 10px;
+    min-height: 217px;
+}
+
+.content .body .packs h2 {
+    font: 20px Segoe;
+    color: #afe482;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding: 12.5px 0;
+}
+
+.content .body .packs .opis {
+    font: 16px Segoe;
+    color: #498119;
+    text-decoration: none;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+.content .body .packs .block {
+    width: 330px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.content .body .packs .image {
+    width: 385px;
+    height: 217px;
+    display: inline-block;
+    float: right;
+}
+
+.content .body .packs .image:before {
+    width: 385px;
+    height: 217px;
+    position: absolute;
+    content: '';
+    display: block;
+    background-image: url(https://cwelth.com/gfx/summer-darkener.png);
+}
+
+.content .body .packs .info {
+    text-align: center;
+}
+
+.content .body .packs .info a {
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-decoration: inherit;
+    color: #afe482;
+    font: 14px Segoe;
+    transform: translateY(0px);
+    transition: transform 250ms;
+}
+
+.content .body .packs .info a:hover {
+    transform: translateY(-5px);
+}
+
+.content .body .packs .info a b {
+    color: #65b026;
+}
+
+.content .body .packs .info .src:before {
+    width: 100%;
+    height: 2px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: #65b026;
+    display: block;
+    content: '';
+}
+
+.content .body .packs .info .src a {
+    color: #65b026;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+.content .body .packs .info .src a:after {
+    content: ' >';
+    color: #afe482;
+}

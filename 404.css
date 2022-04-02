@@ -1,0 +1,130 @@
+
+.error .img {
+    margin-top: 60px;
+    width: 450px;
+    height: 350px;
+    margin-bottom: 60px;
+    background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/servers/servers-hub-4.png);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    animation-name: block;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes block {
+    0% {
+        transform: translateY(0) translateX(-52%);
+    }
+    
+    25% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+    
+    50% {
+        transform: translateY(0) translateX(-48%);
+    }
+    
+    75% {
+        transform: translateY(10px) translateX(-50%);
+    }
+    
+    100% {
+        transform: translateY(0) translateX(-52%);
+    }
+}
+
+.error h1 {
+    color: #333;
+}
+
+.error p {
+    text-align: center;
+}
+
+.error .img:before {
+    content: '';
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 40px;
+    top: -30px;
+    background-position: center;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/servers/cloud-8.png);
+    animation-name: cloud;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud {
+    0% {
+        transform: translateX(0px) translateY(20px);
+    }
+    
+    25% {
+        transform: translateX(-20px) translateY(0);
+    }
+    
+    50% {
+        transform: translateX(0) translateY(0);
+    }
+    
+    75 {
+        transform: translateX(20px) translateY(0);
+    }
+    
+    100% {
+        transform: translateX(0px) translateY(20px);
+    }
+}
+
+.error .img:after {
+    width: 100px;
+    height: 60px;
+    background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/servers/island-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+    animation-name: island;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes island {
+    0% {
+        transform: translateX(-15px) translateY(15px);
+    }
+    
+    25% {
+        transform: translateX(-10px) translateY(0);
+    }
+    
+    50% {
+        transform: translateX(0) translateY(0);
+    }
+    
+    75% {
+        transform: translateX(10px) translateY(0);
+    }
+    
+    100% {
+        transform: translateX(-15px) translateY(15px);
+    }
+}

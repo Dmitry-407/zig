@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cwelth.com/gfx/summer-icon.png" rel="icon"/>
+        <link href="/zig/font.css" rel="stylesheet" type="text/css"/>
+        <link href="/zig/style_code.css" rel="stylesheet" type="text/css"/>
+        <meta property="og:title" content="Исходник"/>
+        <meta property="vk:image"  content="https://dmitriy-407.github.io/zig/img/code.png"/>
+        <meta charset="utf-8">
+        <title>Руководство по моддингу</title>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("jquery", "1.3.2");
+            google.load("jqueryui", "1.7.2");
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body lang="ru">
+        <div class="code--content">
+            <div class="katalog">
+                <div class="meny">
+                    <h1>Урок #2</h1>
+                    <a download href="https://dmitriy-407.github.io/zig/download/lesson/2/tutorial.zip" class="donwload"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="download_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M9 3h6v6h3.034a.4.4 0 0 1 .283.683l-6.034 6.034a.4.4 0 0 1-.566 0L5.683 9.683A.4.4 0 0 1 5.966 9H9V3zM6 18h12a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2z" class="color"></path></g></svg><span class="text">Скачать</span></a>
+                </div>
+                <div class="pacet--katalog packet--block">
+                    <p class="title--pacet">java</p>
+                    <!---->
+                    <div class="pacet packet--block">
+                        <p class="title--pacet">ru.zigthehedge.tutorial</p>
+                        <!---->
+                        <div class="pacet packet--block">
+                            <p class="title--pacet">items</p>
+                            <!---->
+                            <a href="/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="java">Key</a>
+                            <a href="/zig/code/2/java/ru.zigthehedge.tutorial/items/tutorialitems" class="java">TutorialItems</a>
+                        </div>
+                        <a href="/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="java">ClientProxy</a>
+                        <a href="/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="java">CommonProxy</a>
+                        <a href="/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="online java">Tutorial</a>
+                    </div>
+                </div>
+                <div class="pacet--katalog--2 packet--block">
+                    <p class="title--pacet">resources</p>
+                    <div class="pacet packet--block">
+                        <p class="title--pacet">assets.tutorial</p>
+                        <div class="pacet packet--block">
+                            <p class="title--pacet">lang</p>
+                            <a href="/zig/code/2/resources/assets.tutorial/lang/en_us" class="file">en_US.lang</a>
+                        </div>
+                        <div class="pacet packet--block">
+                            <p class="title--pacet">models</p>
+                            <div class="pacet packet--block">
+                                <p class="title--pacet">item</p>
+                                <a href="/zig/code/2/resources/assets.tutorial/models/item/key" class="json">key.json</a>
+                            </div>
+                        </div>
+                        <div class="pacet packet--block">
+                            <p class="title--pacet">texturs</p>
+                            <div class="pacet packet--block">
+                                <p class="title--pacet">items</p>
+                                <a href="/zig/code/2/resources/assets.tutorial/texturs/items/key" class="img">key.png</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code">
+                <span class="number">1</span><span class="color--orang">package</span> ru.zigthehedge.tutorial<span class="color--orang">;</span><br>
+                <span class="number">2</span><br>
+                <span class="number">3</span><span class="color--orang">import</span> net.minecraftforge.fml.common.<span class="color--yellow">Mod</span><span class="color--orang">;</span><br>
+                <span class="number">4</span><span class="color--orang">import</span> net.minecraftforge.fml.common.<span class="color--yellow">SidedProxy</span><span class="color--orang">;</span><br>
+                <span class="number">5</span><span class="color--orang">import</span> net.minecraftforge.fml.common.FMLInitializationEvent<span class="color--orang">;</span><br>
+                <span class="number">6</span><span class="color--orang">import</span> net.minecraftforge.fml.common.FMLPostInitializationEvent<span class="color--orang">;</span><br>
+                <span class="number">7</span><span class="color--orang">import</span> net.minecraftforge.fml.common.FMLPreInitializationEvent<span class="color--orang">;</span><br>
+                <span class="number">8</span><br>
+                <span class="number">9</span><span class="color--yellow">@Mod</span>(<span class="color--violet--2">modid</span> = Tutorial.<span class="color--violet">MODID</span>, <span class="color--violet--2">name</span> = Tutorial.<span class="color--violet">NAME</span>, <span class="color--violet--2">version</span> = Tutorial.<span class="color--violet">VERSION</span>)<br>
+                <span class="number">10</span><span class="color--orang">public class</span> Tutorial {<br>
+                <div>
+                    <span class="number">11</span><span class="color--orang">public static final</span> String <span class="color--violet">MODID</span> = <span class="color--green">"tutorial"</span><span class="color--orang">;</span><br>
+                    <span class="number">12</span><span class="color--orang">public static final</span> String <span class="color--violet">NAME</span> = <span class="color--green">"Tutorial Mod"</span><span class="color--orang">;</span><br>
+                    <span class="number">13</span><span class="color--orang">public static final</span> String <span class="color--violet">VERSION</span> = <span class="color--green">"1.0"</span><span class="color--orang">;</span><br>
+                    <span class="number">14</span><span class="color--yellow">@SidedProxy</span>(<span class="color--violet--2">clientSide</span> = <span class="color--green">"ru.zigthehedge.tutorial.ClientProxy"</span><span class="color--orang">,</span> <span class="color--violet--2">serverSide</span> = <span class="color--green">"ru.zigthehedge.tutorial.CommonProxy"</span>)<br>
+                    <span class="number">15</span><span class="color--orang">public static</span> CommonProxy <span class="color--violet">proxy</span><span class="color--orang">;</span><br>
+                    <span class="number">16</span><br>
+                    <span class="number">17</span><span class="color--yellow">@Mod.EventHandler</span><br>
+                    <span class="number">18</span><span class="color--orang">public void</span> preInit(FMLPreInitializationEvent e)<br>
+                    <span class="number">19</span>{<br>
+                        <div><span class="number">20</span><span class="color--violet">proxy</span>.preInit(e)<span class="color--orang">;</span></div>
+                    <span class="number">21</span>}<br>
+                    <span class="number">22</span><span class="color--yellow">@Mod.EventHandler</span><br>
+                    <span class="number">23</span><span class="color--orang">public void</span> init(FMLInitializationEvent event) <br>
+                    <span class="number">23</span>{<br>
+                        <div><span class="number">25</span><span class="color--violet">proxy</span>.init(event)<span class="color--orang">;</span></div>
+                    <span class="number">26</span>}<br>
+                    <span class="number">27</span><span class="color--yellow">@Mod.EventHandler</span><br>
+                    <span class="number">28</span><span class="color--orang">public void</span> postInit(FMLPostInitializationEvent e)<br>
+                    <span class="number">29</span>{<br>
+                        <div><span class="number">30</span><span class="color--violet">proxy</span>.postInit(e)<span class="color--orang">;</span></div>
+                    <span class="number">31</span>}
+                </div>
+                <span class="number">32</span>}<br>
+                <span class="number">33</span>
+            </div>
+        </div>
+    </body>
+</html>

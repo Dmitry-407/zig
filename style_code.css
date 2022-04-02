@@ -1,0 +1,253 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    color: #a9b7c6;
+    font-weight: 450;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #2b2b2b;
+}
+
+.katalog {
+    width: 520px;
+    height: 100%;
+    background-color: #3c3f41;
+    position: fixed;
+    padding: 0 15px;
+    padding-top: 60px;
+    display: inline-block;
+}
+
+.katalog .meny {
+    padding: 15px 5px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 510px;
+}
+
+.katalog .meny h1 {
+    font-family: Minecraft;
+    color: #8BCD5D;
+    display: inline-block;
+    cursor: default;
+}
+
+.katalog .meny a {
+    text-decoration: inherit;
+}
+
+.katalog .meny a {
+    width: 40px;
+    height: 40px;
+    margin-top: -4px;
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+.katalog .meny a .color {
+    fill: #a9b7c6;
+    transition: fill 250ms;
+}
+
+.katalog .meny a:hover .color {
+    fill: #8BCD5D;
+}
+
+.katalog .meny a span {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #333;
+    margin-top: 45px;
+    font-size: 13px;
+    position: absolute;
+    top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 350ms, opacity 350ms, visibility 350ms;
+}
+
+.katalog .meny a:hover span {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: top 350ms, opacity 350ms, visibility 350ms;
+}
+
+.katalog .meny a.donwload span {
+    margin-left: -55px;
+}
+
+.katalog .packet--block {
+    padding-left: 25px;
+}
+
+.katalog .packet--block a {
+    display: block;
+    text-decoration: inherit;
+    margin-bottom: 2px;
+}
+
+.katalog .packet--block .online:after {
+    width: 550px;
+    height: 21px;
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #0d293e;
+    left: 0;
+    margin-top: -21px;
+    z-index: -1;
+}
+
+.katalog .packet--block .title--pacet {
+    margin-left: -25px;
+    margin-bottom: 2px;
+    cursor: default;
+}
+
+.katalog .packet--block .title--pacet:before,
+.katalog .packet--block .java:before,
+.katalog .packet--block .file:before,
+.katalog .packet--block .json:before,
+.katalog .packet--block .img:before {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    content: '';
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.katalog .packet--block .java:before {
+    background-image: url(https://dmitriy-407.github.io/zig/code/java.png);
+}
+
+.katalog .packet--block .file:before {
+    background-image: url(https://dmitriy-407.github.io/zig/code/lang.png);
+}
+
+.katalog .packet--block .json:before {
+    background-image: url(https://dmitriy-407.github.io/zig/code/json.png);
+}
+
+.katalog .packet--block .img:before {
+    background-image: url(https://dmitriy-407.github.io/zig/code/img.png);
+}
+
+.katalog .packet--block.pacet--katalog .title--pacet:before {
+    background-image: url(https://dmitriy-407.github.io/zig/code/katalog.png);
+}
+
+.katalog .packet--block.pacet--katalog--2 .title--pacet:before {
+    background-image: url(https://dmitriy-407.github.io/zig/code/katalog-2.png);
+}
+
+.katalog .packet--block.pacet .title--pacet:before {
+    background-image: url(https://dmitriy-407.github.io/zig/code/pacet.png);
+}
+
+.code {
+    display: inline-block;
+    width: calc(100% - 610px);
+    margin-left: 550px;
+    min-height: 100%;
+    padding-left: 60px;
+    position: absolute;
+    min-height: 100%;
+    overflow-x: auto;
+}
+
+.code div {
+    margin-left: 30px;
+    display: block;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.code .color--orang {
+    color: #cc7832;
+}
+
+.code .color--orang--2 {
+    color: #ffc66d;
+}
+
+.code .color--yellow {
+    color: #b2b529;
+}
+
+.code .color--violet {
+    color: #9876aa;
+}
+
+.code .color--violet--2 {
+    color: #d0d0ff;
+}
+
+.code .color--green {
+    color: #6a8759;
+}
+
+.code .color--blue {
+    color: #6897b2;
+}
+
+.code:before {
+    width: 50px;
+    content: '';
+    height: 100%;
+    display: block;
+    background-color: #313335;
+    position: fixed;
+    margin-left: -60px;
+}
+
+.code .number {
+    position: fixed;
+    left: 550px;
+    text-align: right;
+    width: 35px;
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;   
+}
+
+.code .img {
+    width: 100%;
+    margin-left: -60px;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    background-color: #555a5c;
+}
+
+.code .error--web {
+    width: 450px;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.code .error--web h1 {
+    color: #8BCD5D;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+

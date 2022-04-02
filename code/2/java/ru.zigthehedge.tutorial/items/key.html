@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cwelth.com/gfx/summer-icon.png" rel="icon"/>
+        <link href="/zig/font.css" rel="stylesheet" type="text/css"/>
+        <link href="/zig/style_code.css" rel="stylesheet" type="text/css"/>
+        <meta property="og:title" content="Исходник"/>
+        <meta property="vk:image"  content="https://dmitriy-407.github.io/zig/img/code.png"/>
+        <meta charset="utf-8">
+        <title>Руководство по моддингу</title>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("jquery", "1.3.2");
+            google.load("jqueryui", "1.7.2");
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body lang="ru">
+        <div class="code--content">
+            <div class="katalog">
+                <div class="meny">
+                    <h1>Урок #2</h1>
+                    <a download href="https://dmitriy-407.github.io/zig/download/lesson/2/tutorial.zip" class="donwload"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="download_24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M9 3h6v6h3.034a.4.4 0 0 1 .283.683l-6.034 6.034a.4.4 0 0 1-.566 0L5.683 9.683A.4.4 0 0 1 5.966 9H9V3zM6 18h12a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2z" class="color"></path></g></svg><span class="text">Скачать</span></a>
+                </div>
+                <div class="pacet--katalog packet--block">
+                    <p class="title--pacet">java</p>
+                    <!---->
+                    <div class="pacet packet--block">
+                        <p class="title--pacet">ru.zigthehedge.tutorial</p>
+                        <!---->
+                        <div class="pacet packet--block">
+                            <p class="title--pacet">items</p>
+                            <!---->
+                            <a href="/zig/code/2/java/ru.zigthehedge.tutorial/items/key" class="online java">Key</a>
+                            <a href="/zig/code/2/java/ru.zigthehedge.tutorial/items/tutorialitems" class="java">TutorialItems</a>
+                        </div>
+                        <a href="/zig/code/2/java/ru.zigthehedge.tutorial/clientproxy" class="java">ClientProxy</a>
+                        <a href="/zig/code/2/java/ru.zigthehedge.tutorial/commonproxy" class="java">CommonProxy</a>
+                        <a href="/zig/code/2/java/ru.zigthehedge.tutorial/tutorial" class="java">Tutorial</a>
+                    </div>
+                </div>
+                <div class="pacet--katalog--2 packet--block">
+                    <p class="title--pacet">resources</p>
+                    <div class="pacet packet--block">
+                        <p class="title--pacet">assets.tutorial</p>
+                        <div class="pacet packet--block">
+                            <p class="title--pacet">lang</p>
+                            <a href="/zig/code/2/resources/assets.tutorial/lang/en_us" class="file">en_US.lang</a>
+                        </div>
+                        <div class="pacet packet--block">
+                            <p class="title--pacet">models</p>
+                            <div class="pacet packet--block">
+                                <p class="title--pacet">item</p>
+                                <a href="/zig/code/2/resources/assets.tutorial/models/item/key" class="json">key.json</a>
+                            </div>
+                        </div>
+                        <div class="pacet packet--block">
+                            <p class="title--pacet">texturs</p>
+                            <div class="pacet packet--block">
+                                <p class="title--pacet">items</p>
+                                <a href="/zig/code/2/resources/assets.tutorial/texturs/items/key" class="img">key.png</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code">
+                <span class="number">1</span><span class="color--orang">package</span> ru.zigthehedge.tutorial.items<span class="color--orang">;</span><br>
+                <span class="number">2</span><br>
+                <span class="number">3</span><span class="color--orang">import</span> net.minecraft.client.renderer.block.model.ModelResourceLocation<span class="color--orang">;</span><br>
+                <span class="number">4</span><span class="color--orang">import</span> net.minecraft.creativetab.CreativeTabs<span class="color--orang">;</span><br>
+                <span class="number">5</span><span class="color--orang">import</span> net.minecraft.item.Item<span class="color--orang">;</span><br>
+                <span class="number">6</span><span class="color--orang">import</span> net.minecraftforge.client.model.ModelLoader<span class="color--orang">;</span><br>
+                <span class="number">7</span><span class="color--orang">import</span> net.minecraftforge.fml.relauncher.Side<span class="color--orang">;</span><br>
+                <span class="number">8</span><span class="color--orang">import</span> net.minecraftforge.fml.relauncher.<span class="color--yellow">SideOnly</span><span class="color--orang">;</span><br>
+                <span class="number">9</span><span class="color--orang">import</span> ru.zigthehedge.tutorial.Tutorial<span class="color--orang">;</span><br>
+                <span class="number">10</span><br>
+                <span class="number">11</span><span class="color--orang">public class</span> Key <span class="color--orang">extends</span> Item {<br>
+                    <div>
+                        <span class="number">12</span><span class="color--orang">public</span> <span class="color--orang--2">Key</span> ()<br>
+                        <span class="number">13</span>{<br>
+                        <div><span class="number">14</span>setRegistryName(<span class="color--green">"key"</span>)<span class="color--orang">;</span><br>
+                            <span class="number">15</span>setUnlocalizedName(Tutorial.<span class="color--violet">MODID</span> + <span class="color--green">".key"</span>)<span class="color--orang">;</span><br>
+                            <span class="number">16</span>setCreativeTab(CreativeTabs.<span class="color--violet">MISC</span>)<span class="color--orang">;</span></div>
+                        <span class="number">17</span>}<br>
+                        <span class="number">18</span><br>
+                        <span class="number">19</span><span class="color--yellow">@SideOnly</span>(Side.<span class="color--violet">CLIENT</span>)<br>
+                        <span class="number">20</span><span class="color--orang">public void</span> <span class="color--orang--2">initModels()</span> {<br>
+                        <div><span class="number">21</span>ModelLoader.setCustomModelResourceLocation(<span class="color--orang">this,</span> <span class="color--blue">0</span><span class="color--orang">, new</span> ModelResourceLocation(getRegistryName(), <span class="color--green">"inventory"</span>));</div>
+                        <span class="number">22</span>}
+                    </div>
+                <span class="number">23</span>}<br>
+                <span class="number">24</span>
+            </div>
+        </div>
+    </body>
+</html>
